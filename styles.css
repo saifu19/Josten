@@ -1,6 +1,8 @@
 /** @format */
 body {
     font-family: "Roboto", sans-serif;
+    height: fit-content;
+    overflow-x:hidden;
 }
 #overview {
     background-image: linear-gradient(#bca478, #c4ab7e, #c3ab7e);
