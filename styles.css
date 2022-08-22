@@ -20,8 +20,8 @@ body,
     position: absolute;
     z-index: 2;
     top: 0;
-    left: -2vw;
-    width: 50%;
+    left: 0vw;
+    width: 40%;
     filter: drop-shadow(2px 2px 20px black);
     /* max-height: 45vh; */
 }
