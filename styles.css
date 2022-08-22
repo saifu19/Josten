@@ -131,7 +131,7 @@ h2 {
     display: flex;
     margin: auto;
     position: relative;
-    top: 70%;
+    top: 75%;
 }
 @media screen and (max-width: 800px) {
     .benefits {
