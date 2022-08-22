@@ -164,7 +164,21 @@
         jQuery('.overview-heading').fitText(2, { minFontSize: '1.6vmax'});
         jQuery('.overview-text').fitText(2.5, { minFontSize: '1.2vmax' });
         jQuery('.enroll-text').fitText(1.2, { minFontSize: '1.2vmax' });
-        jQuery('.desc-heading').fitText(1.2, { minFontSize: '0.8vmax' });
-        jQuery('.desc-text').fitText(1.8, { minFontSize: '0.5vmax'});
+//         jQuery('.desc-heading').fitText(1.2, { minFontSize: '0.8vmax' });
+//         jQuery('.desc-text').fitText(1.8, { minFontSize: '0.5vmax'});
+        function resizeText(height, width) {if (width < 850 && height > 590) {
+                $('.desc-heading').css('font-size', (height*2.3)/(height) + 'vmin');
+                $('.desc-text').css('font-size', (height*1.55)/(height) + 'vmin');
+            } else {
+                $('.desc-heading').css('font-size', (height*2.5)/(height) + 'vmin');
+                $('.desc-text').css('font-size', (height*1.75)/(height) + 'vmin');
+            }
+        }
+        $(document).ready(function() {
+            resizeText($(window).height(), $(window).width());
+        })
+        $(window).resize(function() {
+            resizeText($(window).height(), $(window).width());
+        });
     </script>
 </html>
