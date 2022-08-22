@@ -1,0 +1,222 @@
+/** @format */
+html,
+body,
+.body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100vw;
+    overflow: hidden;
+}
+@font-face {
+    font-family: "archerprosemibold";
+    src: url("archerpro-semibold-webfont.woff2") format("woff2"),
+        url("archerpro-semibold-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+p,
+.badge,
+.btn {
+    font-family: Helvetica, sans-serif;
+    font-weight: 200;
+    white-space: normal;
+}
+h3,
+h4,
+h5,
+h2 {
+    font-family: "archerprosemibold";
+    font-weight: bold;
+}
+#overview1 {
+    /* background-image: linear-gradient(#bca478, #c4ab7e, #c3ab7e); */
+    background-image: url("ribbon.jpg");
+    background-position: 10% 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+.ribbon {
+    display: none;
+    position: absolute;
+    top: 0px;
+    /* max-width: 40%; */
+    height: 33vh;
+}
+.overview1-text::after {
+    content: "\a";
+    white-space: pre;
+}
+#overview2 {
+    background-image: url("header.jpg");
+    background-size: cover;
+    background-position: 100% center;
+    color: white;
+}
+.overview-heading {
+    font-size: 1.6vmax;
+}
+/* .overview-text {
+    font-size: 1.2vmax;
+} */
+.btn-orange {
+    background-color: #b74e19;
+    color: white;
+    margin-bottom: 10px;
+}
+.height-33 {
+    height: 33%;
+}
+.height-34 {
+    height: 40%;
+}
+.height-section {
+    height: 67%;
+}
+.height-90 {
+    height: 90%;
+}
+.full-height {
+    height: 100%;
+}
+#big-man {
+    background-image: url("Man.jpg");
+    background-size: cover;
+    background-position: center 20%;
+    z-index: 1;
+}
+.badge {
+    opacity: 0.9;
+    margin-bottom: 20%;
+    /* margin-top: 80%; */
+    /* margin-left: 8vw; */
+}
+.badge-text {
+    white-space: normal;
+}
+#video-desc {
+    background-color: #b3b3b7;
+    color: #001f3d;
+}
+/* .desc-heading {
+    font-size: 1.3vmax;
+} */
+.desc-text {
+    font-weight: 500;
+    /* font-size: 0.9vmax;
+    line-height: 0.9vmax; */
+}
+.images {
+    background-color: #42a5dc;
+    color: white;
+}
+#girl {
+    background-image: url("girl.jpg");
+    background-size: cover;
+    background-position: center 30%;
+}
+#guy {
+    background-image: url("guy.jpg");
+    background-size: cover;
+    background-position: center 30%;
+}
+#colors {
+    background-image: url("colors.jpg");
+    background-size: cover;
+    background-position: center 30%;
+}
+#concert {
+    background-image: url("concert.jpg");
+    background-size: cover;
+    background-position: center 30%;
+}
+.btn-blue {
+    background-color: #42a5dc;
+    color: white;
+    display: flex;
+    margin: auto;
+    position: relative;
+    top: 70%;
+}
+@media screen and (max-width: 800px) {
+    .benefits {
+        position: relative;
+        left: -10px;
+    }
+    p {
+        font-size: 1.15vmax;
+    }
+}
+@media screen and (max-width: 767px) {
+    html,
+    body,
+    .body {
+        overflow-y: auto;
+    }
+    * {
+        height: auto !important;
+    }
+    .overview1-heading {
+        font-size: 22px !important;
+    }
+    .benefits {
+        text-align: center;
+    }
+    .overview1-text::after {
+        content: "";
+    }
+    .btn-orange {
+        margin-bottom: 4px;
+    }
+    .badge {
+        margin-top: 37vh;
+        margin-bottom: 20vh;
+    }
+    .video-images {
+        height: 200px !important;
+    }
+    /* .desc-heading {
+        font-size: 2vmax;
+    }
+    .desc-text {
+        font-size: 1.5vmax;
+        line-height: 1.5vmax;
+    } */
+}
+@media screen and (max-width: 575px) {
+    body {
+        text-align: center;
+    }
+    h4,
+    h2 {
+        font-size: 20px !important;
+    }
+    p {
+        font-size: 16px !important;
+    }
+    #overview2 {
+        padding: 0 !important;
+    }
+    .enroll {
+        margin: 8px 0 !important;
+    }
+    .video-text-box {
+        margin: 0 20px 0 0 !important;
+    }
+    #video-desc {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .view {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+    .video-images {
+        height: 300px !important;
+    }
+    .images {
+        /* height: auto !important; */
+        padding: 0 30px;
+    }
+}
