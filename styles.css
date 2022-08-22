@@ -198,12 +198,8 @@ h2 {
     .enroll {
         margin: 8px 0 !important;
     }
-    .video-text-box {
-        margin: 0 20px 0 0 !important;
-    }
     #video-desc {
-        padding-top: 10px;
-        padding-bottom: 10px;
+        padding: 10px !important;
     }
     .view {
         padding: 0 !important;
