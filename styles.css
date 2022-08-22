@@ -81,7 +81,7 @@ h2 {
 }
 .badge {
     opacity: 0.9;
-    margin-bottom: 20%;
+    margin-bottom: 15vh;
     /* margin-top: 80%; */
     /* margin-left: 8vw; */
 }
@@ -95,7 +95,8 @@ h2 {
 /* .desc-heading {
     font-size: 1.3vmax;
 } */
-.desc-text, .view-text {
+.desc-text,
+.view-text {
     font-weight: 500;
     /* font-size: 0.9vmax;
     line-height: 0.9vmax; */
@@ -163,8 +164,8 @@ h2 {
     .overview1-text::after {
         content: "";
     }
-    #overview2 {
-        padding: 15px !important;
+    .overview2-text-box {
+        padding: 10px 15px !important;
     }
     .btn-orange {
         margin-bottom: 4px;
@@ -195,9 +196,21 @@ h2 {
     p {
         font-size: 16px !important;
     }
+    .benefits {
+        margin: 12px !important;
+    }
+    .overview2-text-box {
+        padding: 0 25px !important;
+    }
+    #overview2 {
+        padding: 15px !important;
+    }
     .enroll {
         margin: 8px 0 !important;
     }
+    /* .video-text-box {
+        margin: 0 20px 0 0 !important;
+    } */
     #video-desc {
         padding: 10px !important;
     }
@@ -210,6 +223,6 @@ h2 {
     }
     .images {
         /* height: auto !important; */
-        padding: 0 30px;
+        padding: 10px 30px;
     }
 }
