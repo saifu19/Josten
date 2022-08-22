@@ -176,6 +176,8 @@ body,
     .enroll {
         margin: 8px 0 !important;
     }
+    .video-text-box {
+        margin: 0 15px;
     #video-desc {
         padding-top: 10px;
         padding-bottom: 10px;
