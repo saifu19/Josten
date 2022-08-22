@@ -95,7 +95,7 @@ h2 {
 /* .desc-heading {
     font-size: 1.3vmax;
 } */
-.desc-text {
+.desc-text, .view-text {
     font-weight: 500;
     /* font-size: 0.9vmax;
     line-height: 0.9vmax; */
