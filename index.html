@@ -15,12 +15,12 @@
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <body>
         <div class="body">
-            <section class="row height-33">
+            <section class="row" style="height: 33vh">
                 <!-- Overview 1 -->
                 <div id="overview1" class="col-md-4">
                     <div
                         class="row d-flex align-items-center"
-                        style="height: 100%"
+                        style="height: 33vh"
                     >
                         <div class="col-md-6 d-sm-block d-none"></div>
                         <div class="col-md-6 benefits pe-5">
@@ -37,7 +37,7 @@
                 <div id="overview2" class="col-md-8 ps-5">
                     <div
                         class="row d-flex align-items-center"
-                        style="height: 100%"
+                        style="height: 33vh"
                     >
                         <div class="col-sm-6 overview2-text-box pe-5">
                             <h4 class="overview-heading">
@@ -72,7 +72,7 @@
                 <div id="big-man" class="col-md-4">
                     <div
                         class="row d-flex align-items-end"
-                        style="height: 100%"
+                        style="height: 67vh"
                     >
                         <div class="col-2"></div>
                         <div class="col-8 d-flex">
@@ -114,7 +114,7 @@
                                     class="col-sm-6 ps-4 video-text-box d-sm-flex align-items-center"
                                     style="height: 33vh"
                                 >
-                                    <div>
+                                    <div class="ms-2">
                                         <h2 class="desc-heading">
                                             We offer a broad range of benefits.
                                         </h2>
@@ -135,7 +135,7 @@
                                 </div>
                                 <div class="col-sm-6">
                                     <div
-                                        class="view d-sm-flex video-text-box align-items-center pt-2 me-4"
+                                        class="view d-sm-flex video-text-box align-items-center ms-2 me-4"
                                         style="height: 33vh"
                                     >
                                         <div>
@@ -180,32 +180,52 @@
                         style="height: 34vh"
                     >
                         <div class="col-sm-3">
-                            <h6 class="m-0 py-2">Benefits Overview</h6>
-                            <div id="guy" class="height-90 video-images">
+                            <h6 class="m-0 py-2 blue-text">
+                                Benefits Overview
+                            </h6>
+                            <div
+                                id="guy"
+                                class="video-images"
+                                style="height: 30.6vh"
+                            >
                                 <button class="btn btn-blue py-0 rounded-3">
                                     Play Video
                                 </button>
                             </div>
                         </div>
                         <div class="col-sm-3">
-                            <h6 class="m-0 py-2">LiveHealthOnline</h6>
-                            <div id="girl" class="height-90 video-images">
+                            <h6 class="m-0 py-2 blue-text">LiveHealthOnline</h6>
+                            <div
+                                id="girl"
+                                class="video-images"
+                                style="height: 30.6vh"
+                            >
                                 <button class="btn btn-blue py-0 rounded-3">
                                     Play Video
                                 </button>
                             </div>
                         </div>
                         <div class="col-sm-3">
-                            <h6 class="m-0 py-2">Surgery Plus</h6>
-                            <div id="colors" class="height-90 video-images">
+                            <h6 class="m-0 py-2 blue-text">Surgery Plus</h6>
+                            <div
+                                id="colors"
+                                class="video-images"
+                                style="height: 30.6vh"
+                            >
                                 <button class="btn btn-blue py-0 rounded-3">
                                     Play Video
                                 </button>
                             </div>
                         </div>
                         <div class="col-sm-3">
-                            <h6 class="m-0 py-2">BenefitsGuidebook</h6>
-                            <div id="concert" class="height-90 video-images">
+                            <h6 class="m-0 py-2 blue-text">
+                                BenefitsGuidebook
+                            </h6>
+                            <div
+                                id="concert"
+                                class="video-images"
+                                style="height: 30.6vh"
+                            >
                                 <button class="btn btn-blue py-0 rounded-3">
                                     Play Video
                                 </button>
@@ -230,12 +250,13 @@
     <script>
         jQuery(".overview1-heading").fitText(0.5);
         jQuery(".overview-heading").fitText(1.5);
-        jQuery(".overview-text").fitText(2.2);
+        jQuery(".overview-text").fitText(2.3);
         jQuery(".enroll-text").fitText(2);
+        jQuery(".blue-text").fitText(1.3);
         // jQuery(".desc-heading").fitText(1.1);
         // jQuery(".view-text").fitText(1.1);
         function resizeText(height, width) {
-            if (width < 950 && height > 590) {
+            if (width < height + 200 && width > height - 200) {
                 $(".desc-heading").css(
                     "font-size",
                     (height * 2.2) / height + "vmin"
@@ -246,12 +267,12 @@
                 );
                 $(".view-text").css(
                     "font-size",
-                    (height * 1.35) / height + "vmin"
+                    (height * 1.25) / height + "vmin"
                 );
             } else {
                 $(".desc-heading").css(
                     "font-size",
-                    (height * 2.5) / height + "vmin"
+                    (height * 2.4) / height + "vmin"
                 );
                 $(".desc-text").css(
                     "font-size",
@@ -259,15 +280,15 @@
                 );
                 $(".view-text").css(
                     "font-size",
-                    (height * 1.65) / height + "vmin"
+                    (height * 1.55) / height + "vmin"
                 );
             }
         }
         $(document).ready(function () {
-            resizeText($(window).height(), $(window).width());
+            resizeText($(window).width(), $(window).height());
         });
         $(window).resize(function () {
-            resizeText($(window).height(), $(window).width());
+            resizeText($(window).width(), $(window).height());
         });
     </script>
 </html>

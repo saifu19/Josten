@@ -17,14 +17,15 @@ body,
 }
 p,
 .badge,
-.btn {
-    font-family: Helvetica, sans-serif;
-    font-weight: 200;
+.btn,
+body {
+    font-family: Helvetica;
+    font-weight: 300;
     white-space: normal;
 }
 h3,
 h4,
-h5,
+h6,
 h2 {
     font-family: "archerprosemibold";
     font-weight: bold;
@@ -47,9 +48,9 @@ h2 {
     background-position: 100% center;
     color: white;
 }
-.overview-heading {
+/* .overview-heading {
     font-size: 1.6vmax;
-}
+} */
 /* .overview-text {
     font-size: 1.2vmax;
 } */
@@ -87,6 +88,9 @@ h2 {
 }
 .badge-text {
     white-space: normal;
+}
+video {
+    display: block;
 }
 #video-desc {
     background-color: #b3b3b7;
@@ -132,15 +136,6 @@ h2 {
     margin: auto;
     position: relative;
     top: 75%;
-}
-@media screen and (max-width: 800px) {
-    .benefits {
-        position: relative;
-        left: -10px;
-    }
-    p {
-        font-size: 1.15vmax;
-    }
 }
 @media screen and (max-width: 767px) {
     html,
@@ -196,6 +191,10 @@ h2 {
     p {
         font-size: 16px !important;
     }
+    .btn {
+        font-size: 20px;
+        padding: 4px 10px;
+    }
     .benefits {
         margin: 12px !important;
     }
@@ -212,7 +211,7 @@ h2 {
         margin: 0 20px 0 0 !important;
     } */
     #video-desc {
-        padding: 10px !important;
+        padding: 10px 20px !important;
     }
     .view {
         padding: 0 !important;
@@ -223,6 +222,6 @@ h2 {
     }
     .images {
         /* height: auto !important; */
-        padding: 10px 30px;
+        padding: 0 30px 20px 30px;
     }
 }
