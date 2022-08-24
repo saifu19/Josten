@@ -181,6 +181,9 @@ video {
     } */
 }
 @media screen and (max-width: 575px) {
+    html, body, .body {
+        height: git-content !important;
+    }
     body {
         text-align: center;
     }
