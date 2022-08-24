@@ -30,6 +30,14 @@ h2 {
     font-family: "archerprosemibold";
     font-weight: bold;
 }
+a,
+a:focus,
+a:hover,
+a:active {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
 #overview1 {
     /* background-image: linear-gradient(#bca478, #c4ab7e, #c3ab7e); */
     background-image: url("ribbon.jpg");
@@ -59,14 +67,17 @@ h2 {
     color: white;
     margin-bottom: 10px;
 }
+.height-306 {
+    height: 30.6vh;
+}
 .height-33 {
-    height: 33%;
+    height: 33vh;
 }
 .height-34 {
-    height: 40%;
+    height: 34vh;
 }
-.height-section {
-    height: 67%;
+.height-67 {
+    height: 67vh;
 }
 .height-90 {
     height: 90%;
@@ -129,6 +140,37 @@ video {
     background-size: cover;
     background-position: center 30%;
 }
+.modal-header {
+    padding: 12px;
+    font-size: 13px;
+    background-color: #ddd;
+    color: #333;
+}
+.modal {
+    display: none;
+    /* background: #ccc; */
+    /* color: #333; */
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.7);
+    -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.7);
+    -moz-box-shadow: 0 0px 4px rgba(0, 0, 0, 0.7);
+}
+.video-js {
+    height: 100% !important;
+    width: 100% !important;
+}
+.vjs-big-play-button {
+    background-image: url("play-button.png");
+}
+.play-btn {
+    display: none;
+    position: absolute;
+    top: calc(50% - 40px);
+    left: calc(50% - 50px);
+}
+.btn-image {
+    background: inherit;
+    width: 80px;
+}
 .btn-blue {
     background-color: #42a5dc;
     color: white;
@@ -143,7 +185,10 @@ video {
     .body {
         overflow-y: auto;
     }
-    * {
+    .height-33,
+    .height-34,
+    .height-306,
+    .height-67 {
         height: auto !important;
     }
     #overview1 {
@@ -151,6 +196,7 @@ video {
     }
     .overview1-heading {
         font-size: 22px !important;
+        margin: 0 !important;
     }
     .benefits {
         text-align: center;
@@ -181,9 +227,6 @@ video {
     } */
 }
 @media screen and (max-width: 575px) {
-    html, body, .body {
-        height: git-content !important;
-    }
     body {
         text-align: center;
     }
@@ -199,7 +242,7 @@ video {
         padding: 4px 10px;
     }
     .benefits {
-        margin: 12px !important;
+        margin: 12px 0 !important;
     }
     .overview2-text-box {
         padding: 0 25px !important;
@@ -210,16 +253,11 @@ video {
     .enroll {
         margin: 8px 0 !important;
     }
-    .video-text-box {
-        margin: 0 !important;
-        padding: 0 !important;
-    }
+    /* .video-text-box {
+        margin: 0 20px 0 0 !important;
+    } */
     #video-desc {
-        padding: 10px 0px !important;
-    }
-    .text-box-div {
-        margin: 0 !important;
-        padding: 0 35px !important;
+        padding: 10px 20px !important;
     }
     .view {
         padding: 0 !important;
