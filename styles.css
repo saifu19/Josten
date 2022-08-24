@@ -207,11 +207,16 @@ video {
     .enroll {
         margin: 8px 0 !important;
     }
-    /* .video-text-box {
-        margin: 0 20px 0 0 !important;
-    } */
+    .video-text-box {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
     #video-desc {
-        padding: 10px 20px !important;
+        padding: 10px 0px !important;
+    }
+    .text-box-div {
+        margin: 0 !important;
+        padding: 0 35px !important;
     }
     .view {
         padding: 0 !important;
