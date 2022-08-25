@@ -39,18 +39,15 @@ a:active {
     cursor: pointer;
 }
 #overview1 {
-    background-image: linear-gradient(
-        180deg,
-        #b2966a,
-        #b09568,
-        #b4976b,
-        #c3a573
-    );
+    background-image: linear-gradient(#b2966a, #b09568, #b4976b, #c3a573);
     color: white;
 }
 .overview1-text::after {
     content: "\a";
     white-space: pre;
+}
+.ribbon {
+    filter: drop-shadow(2px 2px 20px black);
 }
 #overview2 {
     background-image: url("header.jpg");

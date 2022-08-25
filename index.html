@@ -29,10 +29,11 @@
                 <!-- Overview 1 -->
                 <div id="overview1" class="col-md-4">
                     <div class="row g-0 d-flex align-items-center height-33">
-                        <div class="col-md-6 d-md-block d-none">
+                        <div class="col-md-6 d-md-block d-none text-end">
                             <img
-                                src="ribbon.jpg"
-                                style="height: 33vh; width: 100%"
+                                src="ribbon2.png"
+                                class="ribbon"
+                                style="height: 33vh"
                             />
                         </div>
                         <div class="benefits col-md-6">
@@ -240,6 +241,10 @@
                                             ></button>
                                         </div>
                                         <div class="modal-body p-0 m-0">
+                                            <!-- <div class="col-4"></div>
+                                            <button class="timer-button">
+                                                Set
+                                            </button> -->
                                             <div id="video-div">
                                                 <video
                                                     controls
@@ -445,19 +450,19 @@
         $(window).resize(function () {
             resizeText($(window).width(), $(window).height());
         });
-        // $(".modal-button").click(function () {
-        //     $(".play-btn").css("display", "inline");
-        //     source = $(this).attr("src");
-        //     $("#video-div video source").attr("src", source);
-        //     $("#video-div video")[0].load();
-        // });
         $(".btn-close").click(function () {
             $("video").trigger("pause");
         });
-        // $(".play-btn").click(function () {
-        //     $("#video-div video")[0].play();
-        //     console.log("Clicked");
-        //     $(this).css("display", "none");
+        // function setCurTime(time) {
+        //     var video = $("#timer");
+        //     // video.get(0).load();
+        //     // video[0].play();
+        //     video.currentTime = time;
+        //     video[0].load();
+        // }
+        // $(".timer-button").click(function () {
+        //     console.log("clicked");
+        //     setCurTime(72);
         // });
     </script>
 </html>
