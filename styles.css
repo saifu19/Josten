@@ -190,9 +190,6 @@ video {
     .height-67 {
         height: auto !important;
     }
-    #overview1 {
-        background-image: linear-gradient(#bca478, #c4ab7e, #c3ab7e);
-    }
     .overview1-heading {
         font-size: 22px !important;
         margin: 0 !important;
