@@ -85,7 +85,6 @@ a:active {
     height: 100%;
 }
 #big-man {
-    background-image: url("Man.jpg");
     background-size: cover;
     background-position: center 20%;
     z-index: 1;
@@ -120,22 +119,18 @@ video {
     color: white;
 }
 #girl {
-    background-image: url("girl.jpg");
     background-size: cover;
     background-position: center 30%;
 }
 #guy {
-    background-image: url("guy.jpg");
     background-size: cover;
     background-position: center 30%;
 }
 #colors {
-    background-image: url("colors.jpg");
     background-size: cover;
     background-position: center 30%;
 }
 #concert {
-    background-image: url("concert.jpg");
     background-size: cover;
     background-position: center 30%;
 }
