@@ -1,5 +1,3 @@
-<!-- @format -->
-
 <!DOCTYPE html>
 <html>
     <head>
@@ -7,20 +5,23 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-            crossorigin="anonymous"
         />
         <link
             href="https://d22yj5imox00jx.cloudfront.net/assets/videojs/css/video-js.css?v=1.9.3"
             rel="stylesheet"
         />
-        <link
-            href="https://d22yj5imox00jx.cloudfront.net/assets/videojs/css/quality-selector.css"
-            rel="stylesheet"
-        />
 
         <script src="https://vjs.zencdn.net/7.6.6/video.js"></script>
+
+        <style>
+            @font-face {
+                font-family: "archerprosemibold";
+                src: url("archerpro-semibold-webfont.woff2") format("woff2"),
+                    url("archerpro-semibold-webfont.woff") format("woff");
+                font-weight: normal;
+                font-style: normal;
+            }
+        </style>
     </head>
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <body>
@@ -47,7 +48,7 @@
                 </div>
 
                 <!-- Overview 2 -->
-                <div id="overview2" class="col-md-8 ps-5" style="background-image: url("https://general-mba.s3.us-east-2.amazonaws.com/header.jpg")">
+                <div id="overview2" class="col-md-8 ps-5" style="background-image: url('https://general-mba.s3.us-east-2.amazonaws.com/header.jpg')">
                     <div class="row d-flex align-items-center height-33">
                         <div class="col-sm-6 overview2-text-box pe-5">
                             <h4 class="overview-heading">
@@ -84,7 +85,7 @@
 
             <!-- Main section -->
             <section class="row height-67">
-                <div id="big-man" class="col-md-4" style="background-image: url("https://general-mba.s3.us-east-2.amazonaws.com/Man.jpg)">
+                <div id="big-man" class="col-md-4" style="background-image: url('https://general-mba.s3.us-east-2.amazonaws.com/Man.jpg')">
                     <div class="row d-flex align-items-end height-67">
                         <div class="col-2"></div>
                         <div class="col-8 d-flex">
@@ -207,7 +208,7 @@
                             <h6 class="m-0 py-2 blue-text">
                                 Benefits Overview
                             </h6>
-                            <div id="guy" class="video-images height-306" style="background-image: url("https://general-mba.s3.us-east-2.amazonaws.com/guy.jpg")">
+                            <div id="guy" class="video-images height-306" style="background-image: url('https://general-mba.s3.us-east-2.amazonaws.com/guy.jpg')">
                                 <button
                                     class="btn btn-blue modal-button py-0 rounded-3"
                                     data-bs-toggle="modal"
@@ -266,7 +267,7 @@
                         </div>
                         <div class="col-sm-3">
                             <h6 class="m-0 py-2 blue-text">LiveHealthOnline</h6>
-                            <div id="girl" class="video-images height-306" style="background-image: url("https://general-mba.s3.us-east-2.amazonaws.com/girl.jpg")">
+                            <div id="girl" class="video-images height-306" style="background-image: url('https://general-mba.s3.us-east-2.amazonaws.com/girl.jpg')">
                                 <button
                                     class="btn btn-blue modal-button py-0 rounded-3"
                                     data-bs-toggle="modal"
@@ -321,7 +322,7 @@
                         </div>
                         <div class="col-sm-3">
                             <h6 class="m-0 py-2 blue-text">Surgery Plus</h6>
-                            <div id="colors" class="video-images height-306" style="background-image: url("https://general-mba.s3.us-east-2.amazonaws.com/colors.jpg")">
+                            <div id="colors" class="video-images height-306" style="background-image: url('https://general-mba.s3.us-east-2.amazonaws.com/colors.jpg')">
                                 <button
                                     class="btn btn-blue modal-button py-0 rounded-3"
                                     data-bs-toggle="modal"
@@ -380,7 +381,7 @@
                             <h6 class="m-0 py-2 blue-text">
                                 2023 Benefits Guide
                             </h6>
-                            <div id="concert" class="video-images height-306" style="background-image: url("https://general-mba.s3.us-east-2.amazonaws.com/concert.jpg")">
+                            <div id="concert" class="video-images height-306" style="background-image: url('https://general-mba.s3.us-east-2.amazonaws.com/concert.jpg')">
                                 <button class="btn btn-blue py-0 rounded-3">
                                     <a
                                         href="https://s3.amazonaws.com/flimp3/files/b432994817843780ea72e2edb70e0d68-FILE.pdf?response-content-disposition=inline&response-content-type=application%2Fpdf&AWSAccessKeyId=AKIASPEWEWCJZLHPVHU4&Expires=1661358525&Signature=xXhfyXtTYYPo4n1hRvYa0xi%2F8QQ%3D"
@@ -394,18 +395,8 @@
                 </div>
             </section>
         </div>
-    </body>
-    <script
-        src="https://code.jquery.com/jquery-3.6.0.js"
-        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-        crossorigin="anonymous"
-    ></script>
-    <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"
-    ></script>
-    <!-- <script src="https://vjs.zencdn.net/7.20.2/video.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="fittext.js"></script>
     <script>
         jQuery(".overview1-heading").fitText(0.8);
@@ -453,16 +444,6 @@
         $(".btn-close").click(function () {
             $("video").trigger("pause");
         });
-        // function setCurTime(time) {
-        //     var video = $("#timer");
-        //     // video.get(0).load();
-        //     // video[0].play();
-        //     video.currentTime = time;
-        //     video[0].load();
-        // }
-        // $(".timer-button").click(function () {
-        //     console.log("clicked");
-        //     setCurTime(72);
-        // });
     </script>
+    </body>
 </html>

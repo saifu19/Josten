@@ -8,13 +8,6 @@ body,
     width: 100vw;
     overflow: hidden;
 }
-@font-face {
-    font-family: "archerprosemibold";
-    src: url("archerpro-semibold-webfont.woff2") format("woff2"),
-        url("archerpro-semibold-webfont.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
-}
 p,
 .badge,
 .btn,
