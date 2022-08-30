@@ -5,14 +5,19 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous"
         />
         <link
             href="https://d22yj5imox00jx.cloudfront.net/assets/videojs/css/video-js.css?v=1.9.3"
             rel="stylesheet"
         />
-
+        <link
+            href="https://d22yj5imox00jx.cloudfront.net/assets/videojs/css/quality-selector.css"
+            rel="stylesheet"
+        />
         <script src="https://vjs.zencdn.net/7.6.6/video.js"></script>
-
         <style>
             @font-face {
                 font-family: "archerprosemibold";
@@ -65,7 +70,7 @@
                             <div class="row text-center">
                                 <p class="m-0">
                                     <button
-                                        class="btn btn-orange rounded-3 text-uppercase py-0"
+                                        class="btn bg-orange btn-orange b-radius text-uppercase py-0"
                                     >
                                         <a
                                             href="https://www5.benefitsolver.com/benefits/BenefitSolverView?page_name=signon&co_num=30131&co_affid=jostens"
@@ -90,9 +95,9 @@
                         <div class="col-2"></div>
                         <div class="col-8 d-flex">
                             <div
-                                class="badge btn-orange rounded-0 mx-auto text-start py-2 px-4"
+                                class="badge bg-orange rounded-0 mx-auto text-start py-2 px-4"
                             >
-                                <p class="text-uppercase h6">Questions ?</p>
+                                <p class="text-uppercase h6 badge-header">Questions ?</p>
                                 <p class="mb-1 badge-text">
                                     Contact The Jostens Benefits Center
                                 </p>
@@ -210,9 +215,10 @@
                             </h6>
                             <div id="guy" class="video-images height-306" style="background-image: url('https://general-mba.s3.us-east-2.amazonaws.com/guy.jpg')">
                                 <button
-                                    class="btn btn-blue modal-button py-0 rounded-3"
+                                    class="btn btn-blue modal-button py-0 b-radius"
                                     data-bs-toggle="modal"
                                     data-bs-target="#guy-video-modal"
+                                    
                                 >
                                     Play Video
                                 </button>
@@ -269,7 +275,7 @@
                             <h6 class="m-0 py-2 blue-text">LiveHealthOnline</h6>
                             <div id="girl" class="video-images height-306" style="background-image: url('https://general-mba.s3.us-east-2.amazonaws.com/girl.jpg')">
                                 <button
-                                    class="btn btn-blue modal-button py-0 rounded-3"
+                                    class="btn btn-blue modal-button py-0 b-radius"
                                     data-bs-toggle="modal"
                                     data-bs-target="#girl-video-modal"
                                 >
@@ -323,7 +329,7 @@
                         <div class="col-sm-3">
                             <div class="dropdown">
                                 <h6 class="m-0 py-2 blue-text dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style="cursor: pointer">Well-being Benefits</h6>
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" style="background-color: #F88C2A">
+                                <ul class="dropdown-menu w-100 text-center ul-text" aria-labelledby="dropdownMenuButton1" style="background-color: #F88C2A">
                                     <li class="dropdown-item">Bravo Wellness Portal</li>
                                     <li class="dropdown-item">Online Health University</li>
                                     <li class="dropdown-item">Stop Smoking</li>
@@ -332,7 +338,7 @@
                             </div>
                             <div id="colors" class="video-images height-306" style="background-image: url('https://general-mba.s3.us-east-2.amazonaws.com/colors.jpg')">
                                 <button
-                                    class="btn btn-blue modal-button py-0 rounded-3"
+                                    class="btn btn-blue modal-button py-0 b-radius"
                                     data-bs-toggle="modal"
                                     data-bs-target="#colors-video-modal"
                                 >
@@ -390,7 +396,7 @@
                                 2023 Benefits Guide
                             </h6>
                             <div id="concert" class="video-images height-306" style="background-image: url('https://general-mba.s3.us-east-2.amazonaws.com/concert.jpg')">
-                                <button class="btn btn-blue py-0 rounded-3">
+                                <button class="btn btn-blue py-0 b-radius">
                                     <a
                                         href="https://s3.amazonaws.com/flimp3/files/b432994817843780ea72e2edb70e0d68-FILE.pdf?response-content-disposition=inline&response-content-type=application%2Fpdf&AWSAccessKeyId=AKIASPEWEWCJZLHPVHU4&Expires=1661358525&Signature=xXhfyXtTYYPo4n1hRvYa0xi%2F8QQ%3D"
                                         target="_blank"
@@ -412,35 +418,45 @@
         jQuery(".overview-text").fitText(2.3);
         jQuery(".enroll-text").fitText(2);
         jQuery(".blue-text").fitText(1.3);
+        jQuery(".ul-text").fitText(1.3);
         // jQuery(".desc-heading").fitText(1.1);
         // jQuery(".view-text").fitText(1.1);
-        function resizeText(height, width) {
-            if (width < height + 200 && width > height - 200) {
+        function resizeText(width, height) {
+            if (height < width + 200 && height > width - 200) {
                 $(".desc-heading").css(
                     "font-size",
-                    (height * 2.2) / height + "vmin"
+                    (width * 2.2) / width + "vmin"
                 );
                 $(".desc-text").css(
                     "font-size",
-                    (height * 1.35) / height + "vmin"
+                    (width * 1.35) / width + "vmin"
                 );
                 $(".view-text").css(
                     "font-size",
-                    (height * 1.25) / height + "vmin"
+                    (width * 1.25) / width + "vmin"
                 );
             } else {
                 $(".desc-heading").css(
                     "font-size",
-                    (height * 2.4) / height + "vmin"
+                    (width * 2.4) / width + "vmin"
                 );
                 $(".desc-text").css(
                     "font-size",
-                    (height * 1.65) / height + "vmin"
+                    (width * 1.65) / width + "vmin"
                 );
                 $(".view-text").css(
                     "font-size",
-                    (height * 1.55) / height + "vmin"
+                    (width * 1.55) / width + "vmin"
                 );
+            }
+            if (width > 1600) {
+                // alert(width);
+                $(".btn, .badge-text").css('font-size', width * 0.01 + 12 + "px");
+                $(".badge-header").css('font-size', width * 0.01 + 14 + "px");
+                // alert("Maa chuda")
+            } else {
+                $(".btn, .badge-text, .ul-text").css('font-size', "auto");
+                $(".badge-header").css('font-size', "16px");
             }
         }
         $(document).ready(function () {

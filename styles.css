@@ -53,7 +53,7 @@ a:active {
 /* .overview-text {
     font-size: 1.2vmax;
 } */
-.btn-orange {
+.bg-orange {
     background-color: #b74e19;
     color: white;
     margin-bottom: 10px;
@@ -157,6 +157,13 @@ video {
     background: inherit;
     width: 80px;
 }
+.dropdown-item {
+    color: white;
+    cursor: pointer;
+}
+.dropdown-item:hover {
+    color: black !important;
+}
 .btn-blue {
     background-color: #42a5dc;
     color: white;
@@ -164,6 +171,9 @@ video {
     margin: auto;
     position: relative;
     top: 75%;
+}
+.b-radius {
+    border-radius: 10%;
 }
 @media screen and (max-width: 767px) {
     html,
@@ -254,3 +264,8 @@ video {
         padding: 0 30px 20px 30px;
     }
 }
+/* @media screen and (min-width: 1200px) {
+    button {
+        border-radius: 3000px !important;
+    }
+} */
