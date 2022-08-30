@@ -416,6 +416,7 @@
         jQuery(".overview1-heading").fitText(0.8);
         jQuery(".overview-heading").fitText(1.5);
         jQuery(".overview-text").fitText(2.3);
+        // jQuery(".badge-text").fitText(2);
         jQuery(".enroll-text").fitText(2);
         jQuery(".blue-text").fitText(1.3);
         jQuery(".ul-text").fitText(1.3);
@@ -451,8 +452,9 @@
             }
             if (width > 1200) {
                 // alert(width);
-                $(".btn, .badge-text").css('font-size', width * 0.01 + 12 + "px");
-                $(".badge-header").css('font-size', width * 0.01 + 14 + "px");
+                $(".btn, .badge-text").css('font-size', width * 0.01 + 4 + "px");
+                // $("").css('font-size', width * 0.01 + 4 + "px");
+                $(".badge-header").css('font-size', width * 0.01 + 12 + "px");
             } else {
                 $(".btn, .badge-text, .ul-text").css('font-size', "inherit");
                 $(".badge-header").css('font-size', "16px");
