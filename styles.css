@@ -31,6 +31,11 @@ a:active {
     color: inherit;
     cursor: pointer;
 }
+.bg-cover {
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 #overview1 {
     background-image: linear-gradient(#b2966a, #b09568, #b4976b, #c3a573);
     color: white;
@@ -64,6 +69,9 @@ a:active {
 .height-33 {
     height: 33vh;
 }
+.height-33-imp {
+    height: 33vh;
+}
 .height-34 {
     height: 34vh;
 }
@@ -93,13 +101,20 @@ a:active {
 video {
     display: block;
 }
+.video-hormel {
+    background-color: #c46300;
+}
 #video-desc {
     background-color: #b3b3b7;
     color: #001f3d;
 }
-/* .desc-heading {
-    font-size: 1.3vmax;
-} */
+.video-desc-hormel {
+    background-color: white !important;
+    color: black !important;
+}
+.desc-heading-hormel {
+    color: #77b5c2;
+}
 .desc-text,
 .view-text {
     font-weight: 500;
@@ -175,6 +190,24 @@ video {
 .b-radius {
     border-radius: 10%;
 }
+.text-orange {
+    color: #f78a27;
+}
+.bg-green {
+    background-color: #d6e8c6;
+}
+.bg-dark-green {
+    background-color: #83bc41;
+}
+.text-green {
+    color: #5d9a42;
+}
+.images-hormel {
+    border: 2px solid white;
+}
+.dropdown-menu {
+    text-align: center;
+}
 @media screen and (max-width: 767px) {
     html,
     body,
@@ -186,6 +219,9 @@ video {
     .height-306,
     .height-67 {
         height: auto !important;
+    }
+    .bg-cover {
+        height: 33vh !important;
     }
     .overview1-heading {
         font-size: 22px !important;
@@ -230,6 +266,9 @@ video {
     p {
         font-size: 16px !important;
     }
+    .height-33-imp {
+        height: auto;
+    }
     .btn {
         font-size: 20px;
         padding: 4px 10px;
@@ -242,6 +281,12 @@ video {
     }
     #overview2 {
         padding: 30px !important;
+    }
+    /* #overview2-hormel {
+        padding-top: 30px;
+    } */
+    .overview2-text-box-hormel {
+        padding: 30px 30px 0 30px !important;
     }
     .enroll {
         margin: 8px 0 !important;
@@ -262,6 +307,12 @@ video {
     .images {
         /* height: auto !important; */
         padding: 0 30px 20px 30px;
+    }
+    .images-hormel {
+        border: none;
+    }
+    .bg-green {
+        padding: 15px 0;
     }
 }
 /* @media screen and (min-width: 1200px) {
