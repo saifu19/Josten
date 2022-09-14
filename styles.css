@@ -213,7 +213,9 @@ video {
 }
 .dropdown-menu {
     text-align: center;
+    /* width: calc(100% - 4px) !important; */
 }
+
 @media screen and (max-width: 767px) {
     html,
     body,
