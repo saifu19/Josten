@@ -36,6 +36,10 @@ a:active {
     background-size: cover;
     background-repeat: no-repeat;
 }
+.bg-contain {
+    background-position: center center;
+    background-repeat: no-repeat;
+}
 #overview1 {
     background-image: linear-gradient(#b2966a, #b09568, #b4976b, #c3a573);
     color: white;
@@ -48,7 +52,7 @@ a:active {
     filter: drop-shadow(2px 2px 20px black);
 }
 #overview1-hormel {
-    background-color: #83BC41;
+    background-color: #8FBA54;
 }
 #overview2 {
     background-size: cover;
@@ -215,7 +219,66 @@ video {
     text-align: center;
     /* width: calc(100% - 4px) !important; */
 }
-
+.custom-btn-close {
+    /* background: transparent url("Assets 190.svg") !important; */
+    background: #000 url("Asset190.svg") !important;
+    border-radius: 50%;
+}
+.custom-modal-body {
+    border: 2px solid #4BADBA;
+    border-radius: 0 0 10px 10px;
+}
+.inner-modal {
+    margin: 1px;
+    border: solid 2px #DDDC6C;
+    height: 65vh;
+}
+/* .tab-img {
+    position: relative;
+    top: 25px;
+} */
+.medical-tab {
+    display: none;
+}
+.traditional-tab {
+    display: none;
+}
+.health-tab {
+    display: none;
+}
+.plan-tab {
+    display: none;
+}
+.bg-tab {
+    position: relative;
+}
+.bg-tab img {
+    display: block;
+    width: 100%;
+    max-width: 1200px; /* corresponds to max height of 450px */
+    margin: 0 auto;
+}
+.bg-tab p {
+    position: absolute;
+    /* text-align: center; */
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    line-height: auto;
+    font-size: 16px;
+    cursor: pointer;
+    /* color: white; */
+}
+@media screen and (max-width: 990px) {
+    .bg-tab p {
+        font-size: 8px;
+    }
+    .custom-btn-close {
+        position: relative;
+        bottom: 5px;
+    }
+}
 @media screen and (max-width: 767px) {
     html,
     body,
@@ -322,9 +385,17 @@ video {
     .bg-green {
         padding: 15px 0;
     }
-}
-/* @media screen and (min-width: 1200px) {
-    button {
-        border-radius: 3000px !important;
+    .bg-tab p {
+        font-size: 6px !important;
     }
-} */
+}
+@media screen and (max-width: 360px) {
+    .bg-tab p {
+        font-size: 4px !important;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .bg-tab p {
+        padding-bottom: 2%;
+    }
+}

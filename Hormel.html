@@ -33,7 +33,7 @@
         <div class="body">
             <section class="row height-33">
                 <!-- Overview 1 -->
-                <div id="overview1-hormel" class="col-md-4 bg-cover height-33-imp" style="background-image: url('banner.svg')">
+                <div id="overview1-hormel" class="col-md-4 bg-contain height-33-imp" style="background-image: url('banner.svg')">
                 </div>
 
                 <!-- Overview 2 -->
@@ -51,7 +51,6 @@
                             make a real difference in your life.
                         </p>
                     </div>
-                    
                 </div>
                 <div class="col-sm-6 col-md-4 bg-green d-flex align-items-center height-33-imp">
                     <div class="text-center w-100 text-secondary">
@@ -59,15 +58,50 @@
                         <p class="enroll-text text-green fw-bold">November 8-9 2022</p>
                         <div class="mx-auto">
                             <button
-                                class="btn bg-dark-green text-white fw-bold rounded-3 text-uppercase p-1 p-xxl-2"
+                                class="btn bg-dark-green text-white fw-bold rounded-3 text-uppercase p-1 p-xxl-2" data-bs-toggle="modal" data-bs-target="#enroll-modal"
                             >
-                                <a
-                                    href="https://www5.benefitsolver.com/benefits/BenefitSolverView?page_name=signon&co_num=30131&co_affid=jostens"
-                                    target="_blank"
-                                >
-                                    Enroll</a
-                                >
+                                <!-- <a href="https://www5.benefitsolver.com/benefits/BenefitSolverView?page_name=signon&co_num=30131&co_affid=jostens" target="_blank"> -->
+                                    Enroll
+                                <!-- </a> -->
                             </button>
+                        </div>
+                    </div>
+
+                    <!-- Modal -->
+                    <div id="enroll-modal" class="modal" tabindex="-1">
+                        <div class="modal-dialog modal-xl modal-height">
+                            <div class="modal-content px-5">
+                                <div class="modal-header px-0 border-0 bg-white pb-0">
+                                    <div class="row g-0 w-100">
+                                        <div class="bg-tab col-3 col-lg-2 text-center">
+                                            <svg class="medical-img tab-img" fill="#66acb9" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 373.81 88.14"><g id="traditional_plan_popup"><path class="cls-1" d="M315.12,0H58.69c-11.37,0-21.63,6.29-26,15.95L0,88.14H373.81L341.12,15.95c-4.37-9.66-14.63-15.95-26-15.95Z"/></g></svg>
+                                            <p class="font-weight-bold medical-heading tab-headings text-white mb-0">Medical</p>
+                                        </div>
+                                        <div class="bg-tab col-3 col-lg-2 text-center">
+                                            <svg class="traditional-img tab-img" fill="#66acb9" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 373.81 88.14"><g id="traditional_plan_popup"><path class="cls-1" d="M315.12,0H58.69c-11.37,0-21.63,6.29-26,15.95L0,88.14H373.81L341.12,15.95c-4.37-9.66-14.63-15.95-26-15.95Z"/></g></svg>
+                                            <p class="font-weight-bold traditional-heading tab-headings text-white mb-0">Traditional Plan</p>
+                                        </div>
+                                        <div class="bg-tab col-3 col-lg-2 text-center">
+                                            <svg class="health-img tab-img" fill="#66acb9" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 373.81 88.14"><g id="traditional_plan_popup"><path class="cls-1" d="M315.12,0H58.69c-11.37,0-21.63,6.29-26,15.95L0,88.14H373.81L341.12,15.95c-4.37-9.66-14.63-15.95-26-15.95Z"/></g></svg>
+                                            <p class="font-weight-bold health-heading tab-headings text-white mb-0">Healthy Savings Plan</p>
+                                        </div>
+                                        <div class="bg-tab col-3 col-lg-2 text-center">
+                                            <svg class="plan-img tab-img" fill="#66acb9" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 373.81 88.14"><g id="traditional_plan_popup"><path class="cls-1" d="M315.12,0H58.69c-11.37,0-21.63,6.29-26,15.95L0,88.14H373.81L341.12,15.95c-4.37-9.66-14.63-15.95-26-15.95Z"/></g></svg>
+                                            <p class="font-weight-bold plan-heading tab-headings text-white mb-0">Plan Comparison</p>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="custom-btn-close ms-2 btn-close" data-bs-dismiss="modal" aria-label="Close">
+                                    </button>
+                                </div>
+                                <div class="custom-modal-body p-0 mb-5 modal-body">
+                                    <div class="inner-modal mb-1">
+                                        <div class="medical-tab h-100">one</div>
+                                        <div class="traditional-tab h-100">two</div>
+                                        <div class="health-tab h-100">three</div>
+                                        <div class="plan-tab h-100">four</div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -392,6 +426,46 @@
         $(".btn-close").click(function () {
             $("video").trigger("pause");
         });
+        $('.tab-img, .tab-headings').click(function() {
+            if($(this).hasClass('medical-img') || $(this).hasClass('medical-heading')) {
+                $(".medical-tab").css('display', 'block');
+                // colorChange('.medical-img');
+                $('.medical-img').attr('fill', '#2C5D64');
+                $('.traditional-img').attr('fill', '#66acb9');
+                $('.health-img').attr('fill', '#66acb9');
+                $('.plan-img').attr('fill', '#66acb9');
+                $('.traditional-tab').css('display', 'none');
+                $('.health-tab').css('display', 'none');
+                $('.plan-tab').css('display', 'none');
+            } else if($(this).hasClass('traditional-img') || $(this).hasClass('traditional-heading')) {
+                $('.medical-tab').css('display', 'none');
+                $('.traditional-img').attr('fill', '#2C5D64');
+                $('.medical-img').attr('fill', '#66acb9');
+                $('.health-img').attr('fill', '#66acb9');
+                $('.plan-img').attr('fill', '#66acb9');
+                $('.traditional-tab').css('display', 'block');
+                $('.health-tab').css('display', 'none');
+                $('.plan-tab').css('display', 'none');
+            } else if($(this).hasClass('health-img') || $(this).hasClass('health-heading')) {
+                $('.medical-tab').css('display', 'none');
+                $('.traditional-tab').css('display', 'none');
+                $('.health-tab').css('display', 'block');
+                $('.health-img').attr('fill', '#2C5D64');
+                $('.traditional-img').attr('fill', '#66acb9');
+                $('.plan-img').attr('fill', '#66acb9');
+                $('.medical-img').attr('fill', '#66acb9');
+                $('.plan-tab').css('display', 'none');
+            } else {
+                $('.medical-tab').css('display', 'none');
+                $('.traditional-tab').css('display', 'none');
+                $('.health-tab').css('display', 'none');
+                $('.plan-tab').css('display', 'block');
+                $('.plan-img').attr('fill', '#2C5D64');
+                $('.medical-img').attr('fill', '#66acb9');
+                $('.traditional-img').attr('fill', '#66acb9');
+                $('.health-img').attr('fill', '#66acb9');
+            }
+        })
     </script>
     </body>
 </html>
