@@ -12,11 +12,14 @@
     <link rel="stylesheet" href="gui_assets/details/plugin/flipbook.style.css">
     <link rel="stylesheet" href="gui_assets/details/css/font-awesome.css">
 
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100&display=swap" rel="stylesheet">
+
     <!-- flipbook code -->
     <script src="gui_assets/details/plugin/flipbook.js"></script>
     <!-- <script src="gui_assets/details/js/jquery.main.js"></script> -->
-
-    
     <style>
         @font-face {
             font-family: "archerprosemibold";
@@ -28,9 +31,14 @@
     </style>
 </head>
 <link rel="stylesheet" type="text/css" href="styles.css" />
+<style>
+    .hormel-body, body, p, .btn {
+        font-family: 'Roboto' !important;
+    }
+</style>
 
 <body>
-    <div class="body">
+    <div class="hormel-body body">
         <section class="row height-33">
             <!-- Overview 1 -->
             <div id="overview1-hormel" class="col-md-4 bg-contain height-33-imp"
@@ -82,7 +90,8 @@
                                                     d="M315.12,0H58.69c-11.37,0-21.63,6.29-26,15.95L0,88.14H373.81L341.12,15.95c-4.37-9.66-14.63-15.95-26-15.95Z" />
                                             </g>
                                         </svg>
-                                        <p class="font-weight-bold medical-heading tab-headings text-white mb-0">Medical
+                                        <p class="font-weight-bold medical-heading tab-headings text-white mb-0">
+                                            Medical
                                         </p>
                                     </div>
                                     <div class="bg-tab col-3 col-lg-2 text-center">
@@ -94,7 +103,8 @@
                                             </g>
                                         </svg>
                                         <p class="font-weight-bold traditional-heading tab-headings text-white mb-0">
-                                            Traditional Plan</p>
+                                            Traditional Plan
+                                        </p>
                                     </div>
                                     <div class="bg-tab col-3 col-lg-2 text-center">
                                         <svg class="health-img tab-img" fill="#66acb9"
@@ -104,8 +114,9 @@
                                                     d="M315.12,0H58.69c-11.37,0-21.63,6.29-26,15.95L0,88.14H373.81L341.12,15.95c-4.37-9.66-14.63-15.95-26-15.95Z" />
                                             </g>
                                         </svg>
-                                        <p class="font-weight-bold health-heading tab-headings text-white mb-0">Healthy
-                                            Savings Plan</p>
+                                        <p class="font-weight-bold health-heading tab-headings text-white mb-0">
+                                            Healthy Savings Plan
+                                        </p>
                                     </div>
                                     <div class="bg-tab col-3 col-lg-2 text-center">
                                         <svg class="plan-img tab-img" fill="#66acb9" xmlns="http://www.w3.org/2000/svg"
@@ -115,23 +126,71 @@
                                                     d="M315.12,0H58.69c-11.37,0-21.63,6.29-26,15.95L0,88.14H373.81L341.12,15.95c-4.37-9.66-14.63-15.95-26-15.95Z" />
                                             </g>
                                         </svg>
-                                        <p class="font-weight-bold plan-heading tab-headings text-white mb-0">Plan
-                                            Comparison</p>
+                                        <p class="font-weight-bold plan-heading tab-headings text-white mb-0">
+                                            Plan Comparison
+                                        </p>
                                     </div>
                                 </div>
-                                <button type="button" class="custom-btn-close ml-2 btn-close" data-bs-dismiss="modal"
+                                <button type="button" class="custom-btn-close btn-close" data-bs-dismiss="modal"
                                     aria-label="Close" style="margin-right:5px;">
                                 </button>
                             </div>
                             <div class="custom-modal-body p-0 mb-3 modal-body">
-                                <div class="inner-modal mb-1">
+                                <div class="inner-modal mb-1" style="background-image: url('Asset90.svg');">
                                     <div class="medical-tab h-100">
-                                        <div class="row" style="overflow: hidden;">
-                                            <div class="col-md-8 bg-info"> <div id="flipCon"></div> </div>
-                                            <div class="col-md-4 bg-warning"> woohoo</div>
+                                        <div class="d-flex" style="overflow: hidden;">
+                                            <div class="col-md-8">
+                                                <div id="flipCon">
+                                                </div>
+                                                <img class="cross-img" src="Asset190.svg" style="width: 1.5em; height: 1.5em;">
+                                            </div>
+                                            <div class="col-md-4 pe-lg-5 pe-md-3 doc-lib mt-3 text-center d-flex align-items-center">
+                                                <div class="inner-doc-lib" style="overflow-y: auto;">
+                                                    <p class="h4 py-2 w-100 text-white" style="background-color: #4caebb">Document Library</p>
+                                                    <div id="pdf" class="row g-0 mt-2">
+                                                        <div class="col-md-6">
+                                                            <img class="pdf-img" src="Asset20.svg">
+                                                            <p class="text-dark">Name</p>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <img class="pdf-img" src="Asset20.svg">
+                                                            <p class="text-dark">Name</p>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <img class="pdf-img" src="Asset20.svg">
+                                                            <p class="text-dark">Name</p>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <img class="pdf-img" src="Asset20.svg">
+                                                            <p class="text-dark">Name</p>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <img class="pdf-img" src="Asset20.svg">
+                                                            <p class="text-dark">Name</p>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <img class="pdf-img" src="Asset20.svg">
+                                                            <p class="text-dark">Name</p>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <img class="pdf-img" src="Asset20.svg">
+                                                            <p class="text-dark">Name</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="traditional-tab h-100">two</div>
+                                    <div class="traditional-tab h-100">
+                                        <div class="row g-0">
+                                            <div class="col-md-4 bg-danger">
+                                                one
+                                            </div>
+                                            <div class="col-md-4 bg-info">two</div>
+                                            <div class="col-md-4 bg-primary">three</div>
+                                        </div>
+                                    </div>
                                     <div class="health-tab h-100">three</div>
                                     <div class="plan-tab h-100">four</div>
 
