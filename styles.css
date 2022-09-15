@@ -250,6 +250,7 @@ video {
     border: 3px solid #4BADBA;
     border-radius: 0 0 10px 10px;
     overflow-y: auto;
+    overflow-x: hidden;
 }
 .inner-modal {
     margin: 1px;
