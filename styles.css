@@ -249,6 +249,7 @@ video {
 .custom-modal-body {
     border: 3px solid #4BADBA;
     border-radius: 0 0 10px 10px;
+    overflow-y: auto;
 }
 .inner-modal {
     margin: 1px;
@@ -290,7 +291,7 @@ video {
     right: 0;
     z-index: 10;
     line-height: auto;
-    font-size: 16px;
+    font-size: 12px;
     cursor: pointer;
     /* color: white; */
 }
@@ -323,7 +324,7 @@ video {
 }
 @media screen and (max-width: 990px) {
     .bg-tab p {
-        font-size: 8px;
+        font-size: 10px;
     }
     .custom-btn-close {
         position: relative;
@@ -376,6 +377,7 @@ video {
         height: 200px !important;
     }
     .flipbook-main-wrapper {
+        
         width: 80% !important;
         margin: 40px auto;
     }
@@ -447,12 +449,12 @@ video {
         padding: 15px 0;
     }
     .bg-tab p {
-        font-size: 6px !important;
+        font-size: 8px !important;
     }
 }
 @media screen and (max-width: 360px) {
     .bg-tab p {
-        font-size: 4px !important;
+        font-size: 6px !important;
     }
 }
 @media screen and (min-width: 1200px) {
