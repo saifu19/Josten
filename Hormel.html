@@ -67,8 +67,7 @@
                     <p class="m-0 enroll-text">Open Enrollment</p>
                     <p class="enroll-text text-green fw-bold">November 8-9 2022</p>
                     <div class="mx-auto">
-                        <button class="btn bg-dark-green text-white fw-bold rounded-3 text-uppercase p-1 p-xxl-2"
-                            data-bs-toggle="modal" data-bs-target="#enroll-modal">
+                        <button class="btn bg-dark-green text-white fw-bold rounded-3 text-uppercase p-1 p-xxl-2" data-bs-toggle="modal" data-bs-target="#enroll-modal">
                             <!-- <a href="https://www5.benefitsolver.com/benefits/BenefitSolverView?page_name=signon&co_num=30131&co_affid=jostens" target="_blank"> -->
                             Enroll
                             <!-- </a> -->
@@ -292,11 +291,11 @@
             <div class="row g-0 text-center text-white height-34">
                 <div class="col-sm-4 col-md-2 px-0 images-hormel" style="background-color: #6e9ea8">
                     <div class="dropdown">
-                        <h6 class="m-0 py-2 blue-text pe-none" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style="cursor: pointer">
-                            Medical
-                            <span class="dropdown-toggle" style="pointer-events: all !important;"></span>
+                        <h6 class="m-0 py-2 blue-text">
+                            <span class="c-pointer" data-bs-toggle="modal" data-bs-target="#enroll-modal">Medical</span>
+                            <span class="dropdown-toggle medical-toggle c-pointer" value="medical"></span>
                         </h6>
-                        <ul class="dropdown-menu w-100 ul-text p-0 rounded-3" aria-labelledby="dropdownMenuButton1">
+                        <ul class="dropdown-ul medical-ul w-100 ul-text p-0 rounded-3">
                             <li class="dropdown-item" style="background-color: #98c8d0">
                                 <p class="mb-0">
                                     Traditional Plan
@@ -320,11 +319,11 @@
                 </div>
                 <div class="col-sm-4 col-md-2 px-0 images-hormel" style="background-color: #416c73">
                     <div class="dropdown">
-                        <h6 class="m-0 py-2 blue-text pe-none" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false" style="cursor: pointer">
+                        <h6 class="m-0 py-2 blue-text">
                             Dental
-                            <span class="dropdown-toggle" style="pointer-events: all !important;"></span>
+                            <span class="dropdown-toggle c-pointer" value="dental"></span>
                         </h6>
-                        <ul class="dropdown-menu w-100 ul-text p-0" aria-labelledby="dropdownMenuButton2">
+                        <ul class="dropdown-ul dental-ul w-100 ul-text p-0" aria-labelledby="dropdownMenuButton2">
                             <li class="dropdown-item" style="background-color: #74979d">
                                 <p class="mb-0">
                                     Bravo Wellness Portal
@@ -348,12 +347,11 @@
                 </div>
                 <div class="col-sm-4 col-md-2 px-0 images-hormel" style="background-color: #78a44a">
                     <div class="dropdown">
-                        <h6 class="m-0 py-2 blue-text pe-none" id="dropdownMenuButton3"
-                            data-bs-toggle="dropdown" aria-expanded="false" style="cursor: pointer">
+                        <h6 class="m-0 py-2 blue-text">
                             Financial
-                            <span class="dropdown-toggle" style="pointer-events: all !important;"></span>
+                            <span class="dropdown-toggle c-pointer" value="financial"></span>
                         </h6>
-                        <ul class="dropdown-menu w-100 ul-text p-0" aria-labelledby="dropdownMenuButton3">
+                        <ul class="dropdown-ul financial-ul w-100 ul-text p-0" aria-labelledby="dropdownMenuButton3">
                             <li class="dropdown-item" style="background-color: #9dca70">
                                 <p class="mb-0">
                                     Bravo Wellness Portal
@@ -377,12 +375,11 @@
                 </div>
                 <div class="col-sm-4 col-md-2 px-0 images-hormel" style="background-color: #52823e">
                     <div class="dropdown">
-                        <h6 class="m-0 py-2 blue-text pe-none" id="dropdownMenuButton4"
-                            data-bs-toggle="dropdown" aria-expanded="false" style="cursor: pointer">
+                        <h6 class="m-0 py-2 blue-text">
                             Well-Being
-                            <span class="dropdown-toggle" style="pointer-events: all !important;"></span>
+                            <span class="dropdown-toggle c-pointer" value="wellbeing"></span>
                         </h6>
-                        <ul class="dropdown-menu ul-text p-0 w-100" aria-labelledby="dropdownMenuButton4">
+                        <ul class="dropdown-ul wellbeing-ul ul-text p-0 w-100" aria-labelledby="dropdownMenuButton4">
                             <li class="dropdown-item" style="background-color: #70ab58">
                                 <p class="mb-0">
                                     Bravo Wellness Portal
@@ -406,12 +403,11 @@
                 </div>
                 <div class="col-sm-4 col-md-2 px-0 images-hormel" style="background-color: #dc7a1a">
                     <div class="dropdown">
-                        <h6 class="m-0 py-2 blue-text pe-none" id="dropdownMenuButton4"
-                            data-bs-toggle="dropdown" aria-expanded="false" style="cursor: pointer">
+                        <h6 class="m-0 py-2 blue-text">
                             Voluntary
-                            <span class="dropdown-toggle" style="pointer-events: all !important;"></span>
+                            <span class="dropdown-toggle c-pointer" value="voluntary"></span>
                         </h6>
-                        <ul class="dropdown-menu ul-text p-0 w-100" aria-labelledby="dropdownMenuButton4">
+                        <ul class="dropdown-ul voluntary-ul ul-text p-0 w-100" aria-labelledby="dropdownMenuButton4">
                             <li class="dropdown-item" style="background-color: #f1a253">
                                 <p class="mb-0">
                                     Bravo Wellness Portal
@@ -435,12 +431,11 @@
                 </div>
                 <div class="col-sm-4 col-md-2 px-0 images-hormel" style="background-color: #cc6439">
                     <div class="dropdown">
-                        <h6 class="m-0 py-2 blue-text pe-none" id="dropdownMenuButton4"
-                            data-bs-toggle="dropdown" aria-expanded="false" style="cursor: pointer">
+                        <h6 class="m-0 py-2 blue-text">
                             Other
-                            <span class="dropdown-toggle" style="pointer-events: all !important;"></span>
+                            <span class="dropdown-toggle c-pointer" value="other"></span>
                         </h6>
-                        <ul class="dropdown-menu ul-text p-0 w-100" aria-labelledby="dropdownMenuButton4">
+                        <ul class="dropdown-ul other-ul ul-text p-0 w-100" aria-labelledby="dropdownMenuButton4">
                             <li class="dropdown-item" style="background-color: #f07f51">
                                 <p class="mb-0">
                                     Bravo Wellness Portal
@@ -536,6 +531,29 @@
         $(".btn-close").click(function () {
             $("video").trigger("pause");
         });
+        function toggler(dropdown) {
+            dropdownUl = $("." + dropdown + "-ul");
+            if (dropdownUl.css('display') == "none") {
+                $(".dropdown-ul").each(function() {
+                    $(this).hide();
+                })
+                dropdownUl.css("display", "block");
+            } else {
+                dropdownUl.css("display", "none");
+            }
+        }
+        $(document).click(function(){
+            $(".dropdown-ul").each(function() {
+                $(this).hide();
+            })
+        });
+        $(".dropdown-toggle").click(function(e) {
+            e.stopPropagation();
+            dropdown = $(this).attr("value");
+            toggler(dropdown, "block");
+            clicked = true;
+        });
+        
         $('.tab-img, .tab-headings').click(function () {
             if ($(this).hasClass('medical-img') || $(this).hasClass('medical-heading')) {
                 $(".medical-tab").css('display', 'block');

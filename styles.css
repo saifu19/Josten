@@ -26,6 +26,9 @@ h2 {
     font-family: "archerprosemibold";
     font-weight: bold;
 }
+.c-pointer {
+    cursor: pointer;
+}
 /* scrollbar width */
 ::-webkit-scrollbar {
   width: 5px;
@@ -240,6 +243,11 @@ video {
 .dropdown-menu {
     text-align: center;
     /* width: calc(100% - 4px) !important; */
+}
+.dropdown-ul {
+    display: none;
+    position: absolute;
+    z-index: 2;
 }
 .custom-btn-close {
     /* background: transparent url("Assets 190.svg") !important; */
