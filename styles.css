@@ -250,8 +250,7 @@ video {
     z-index: 2;
 }
 .custom-btn-close {
-    /* background: transparent url("Assets 190.svg") !important; */
-    background: #000 url("Asset190.svg") !important;
+    border: none;
     border-radius: 50%;
 }
 .custom-modal-body {
