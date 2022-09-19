@@ -285,6 +285,7 @@ video {
 }
 .bg-tab {
     position: relative;
+    width: 20%;
 }
 .bg-tab img {
     display: block;
@@ -300,7 +301,7 @@ video {
     right: 0;
     z-index: 10;
     line-height: auto;
-    font-size: 12px;
+    font-size: 16px;
     cursor: pointer;
     /* color: white; */
 }
