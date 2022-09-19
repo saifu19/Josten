@@ -253,6 +253,9 @@ video {
     border: none;
     border-radius: 50%;
 }
+.cross-svg {
+    width: 25px;
+}
 .custom-modal-body {
     border: 3px solid #4BADBA;
     border-radius: 0 0 10px 10px;
@@ -338,6 +341,9 @@ video {
     .custom-btn-close {
         position: relative;
         bottom: 5px;
+    }
+    .cross-svg {
+        width: 15px;
     }
     .books {
         width: 3em;
