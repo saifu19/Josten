@@ -250,6 +250,8 @@ video {
     z-index: 2;
 }
 .custom-btn-close {
+    /* background: transparent url("Assets 190.svg") !important; */
+    /* background-color: #000 !important; */
     border: none;
     border-radius: 50%;
 }
@@ -289,23 +291,15 @@ video {
     position: relative;
     width: 20%;
 }
-.bg-tab img {
-    display: block;
-    width: 100%;
-    max-width: 1200px; /* corresponds to max height of 450px */
-    margin: 0 auto;
-}
 .bg-tab p {
     position: absolute;
-    /* text-align: center; */
-    bottom: 0;
     left: 0;
     right: 0;
+    bottom: 0;
     z-index: 10;
     line-height: auto;
     font-size: 16px;
     cursor: pointer;
-    /* color: white; */
 }
 #flipCon {
     position: static !important;
@@ -381,6 +375,9 @@ video {
     .overview2-text-box {
         padding: 10px 15px !important;
     }
+    .overview2-text-box-hormel {
+        text-align: center;
+    }
     .btn-orange {
         margin-bottom: 4px;
     }
@@ -392,7 +389,6 @@ video {
         height: 200px !important;
     }
     .flipbook-main-wrapper {
-        
         width: 80% !important;
         margin: 40px auto;
     }
@@ -434,9 +430,9 @@ video {
     /* #overview2-hormel {
         padding-top: 30px;
     } */
-    .overview2-text-box-hormel {
+    /* .overview2-text-box-hormel {
         padding: 30px 30px 0 30px !important;
-    }
+    } */
     .enroll {
         margin: 8px 0 !important;
     }
@@ -465,6 +461,14 @@ video {
     }
     .bg-tab p {
         font-size: 8px !important;
+    }
+}
+@media screen and (max-width: 480px) {
+    /* .bg-tab {
+        bottom: -5px;
+    } */
+    .bg-tab p {
+        bottom: -3px;
     }
 }
 @media screen and (max-width: 360px) {
