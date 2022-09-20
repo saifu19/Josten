@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hormel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="gui_assets/details/plugin/flipbook.style.css">
+    <link rel="stylesheet" href="gui_assets/details/css/font-awesome.css">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100&display=swap" rel="stylesheet">
+
+    <!-- flipbook code -->
+    <script src="gui_assets/details/plugin/flipbook.js"></script>
+    <!-- <script src="gui_assets/details/js/jquery.main.js"></script> -->
+    <style>
+        @font-face {
+            font-family: "archerprosemibold";
+            src: url("archerpro-semibold-webfont.woff2") format("woff2"),
+                url("archerpro-semibold-webfont.woff") format("woff");
+            font-weight: normal;
+            font-style: normal;
+        }
+    </style>
+</head>
+<link rel="stylesheet" type="text/css" href="styles.css" />
+<style>
+    .hormel-body, body, p, .btn, h1, h2, h3, h4, h5, h6 {
+        font-family: 'Roboto', sans-serif !important;
+    }
+</style>
+
+<body>
+    <div class="hormel-body body">
+        <section class="row g-0 text-center text-white height-33">
+            <!-- Overview 1 -->
+            <div id="overview1-hormel" class="col-md-4">
+                <div class="d-flex justify-content-center align-items-center height-33-imp">
+                    <img class="img-fluid height-33-imp" src="banner.svg">
+                </div>
+            </div>
+
+            <!-- Overview 2 -->
+            <div class="col-sm-6 col-md-2 height-33" style="background-color: #78a44a">
+                <div class="px-0 images-hormel">
+                    <div class="dropdown">
+                        <h6 class="m-0 py-2" style="background-color: #66a523">
+                            Financial
+                            <span class="dropdown-toggle c-pointer" value="financial"></span>
+                        </h6>
+                        <ul class="dropdown-ul financial-ul w-100 ul-text p-0" aria-labelledby="dropdownMenuButton3">
+                            <li class="dropdown-item" style="background-color: #9dca70">
+                                <p class="mb-0">
+                                    Bravo Wellness Portal
+                                </p>
+                            </li>
+                            <li class="dropdown-item" style="background-color: #88c24e">
+                                <p class="mb-0">
+                                    Online Health University
+                                </p>
+                            </li>
+                            <li class="dropdown-item" style="background-color: #9dca70">
+                                <p class="mb-0">
+                                    Stop Smoking
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="financial" class="video-images d-flex align-items-center w-100 height-306">
+                        <img class="img-fluid mx-auto" src="vision.svg">
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col-sm-6 col-md-2 height-33" style="background-color: #52823e">
+                <div class="px-0 images-hormel">
+                    <div class="dropdown">
+                        <h6 class="m-0 py-2" style="background-color: #3e8321">
+                            Well-Being
+                            <span class="dropdown-toggle c-pointer" value="wellbeing"></span>
+                        </h6>
+                        <ul class="dropdown-ul wellbeing-ul ul-text p-0 w-100" aria-labelledby="dropdownMenuButton4">
+                            <li class="dropdown-item" style="background-color: #70ab58">
+                                <p class="mb-0">
+                                    Bravo Wellness Portal
+                                </p>
+                            </li>
+                            <li class="dropdown-item" style="background-color: #59ac39">
+                                <p class="mb-0">
+                                    Online Health University
+                                </p>
+                            </li>
+                            <li class="dropdown-item" style="background-color: #70ab58">
+                                <p class="mb-0">
+                                    Stop Smoking
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="wellbeing" class="video-images d-flex align-items-center w-100 height-306 mt-0">
+                        <img class="img-fluid mx-auto" src="disability.svg">
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-2 height-33" style="background-color: #dc7a1a">
+                <div class="px-0 images-hormel">
+                    <div class="dropdown">
+                        <h6 class="m-0 py-2" style="background-color: #da6f05">
+                            Voluntary
+                            <span class="dropdown-toggle c-pointer" value="voluntary"></span>
+                        </h6>
+                        <ul class="dropdown-ul voluntary-ul ul-text p-0 w-100" aria-labelledby="dropdownMenuButton4">
+                            <li class="dropdown-item" style="background-color: #f1a253">
+                                <p class="mb-0">
+                                    Bravo Wellness Portal
+                                </p>
+                            </li>
+                            <li class="dropdown-item" style="background-color: #f3993f">
+                                <p class="mb-0">
+                                    Online Health University
+                                </p>
+                            </li>
+                            <li class="dropdown-item" style="background-color: #f1a253">
+                                <p class="mb-0">
+                                    Stop Smoking
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="voluntary" class="video-images d-flex align-items-center w-100 height-306">
+                        <img class="img-fluid mx-auto" src="voluntary.svg">
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col-sm-6 col-md-2 height-33" style="background-color: #cc6439">
+                <div class="px-0 images-hormel">
+                    <div class="dropdown">
+                        <h6 class="m-0 py-2" style="background-color: #ce4e17">
+                            Other
+                            <span class="dropdown-toggle c-pointer" value="other"></span>
+                        </h6>
+                        <ul class="dropdown-ul other-ul ul-text p-0 w-100" aria-labelledby="dropdownMenuButton4">
+                            <li class="dropdown-item" style="background-color: #f07f51">
+                                <p class="mb-0">
+                                    Bravo Wellness Portal
+                                </p>
+                            </li>
+                            <li class="dropdown-item" style="background-color: #f3713e">
+                                <p class="mb-0">
+                                    Online Health University
+                                </p>
+                            </li>
+                            <li class="dropdown-item" style="background-color: #f07f51">
+                                <p class="mb-0">
+                                    Stop Smoking
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="others" class="video-images d-flex align-items-center w-100 height-306">
+                        <img class="img-fluid mx-auto" src="other.svg">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main section 1 -->
+        <section class="row height-33 g-0 text-center text-white">
+            <div id="people" class="col-md-4">
+                <div class="d-flex height-33-imp align-items-center">
+                    <img class="img-fluid h-100 mx-auto" src="hero.svg">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="height-33 video-hormel">
+                    <video width="100%" autoplay muted controls loop style="height: 100%">
+                        <source src="https://general-mba.s3.us-east-2.amazonaws.com/video.mp4" type="video/mp4" />
+                    </video>
+                </div>
+                
+            </div>
+            <div class="col-sm-6 col-md-2 height-33" style="background-color: #dc7a1a">
+                <div class="px-0 images-hormel">
+                    <div class="dropdown">
+                        <h6 class="m-0 py-2" style="background-color: #da6f05">
+                            Voluntary
+                            <span class="dropdown-toggle c-pointer" value="voluntary"></span>
+                        </h6>
+                        <ul class="dropdown-ul voluntary-ul ul-text p-0 w-100" aria-labelledby="dropdownMenuButton4">
+                            <li class="dropdown-item" style="background-color: #f1a253">
+                                <p class="mb-0">
+                                    Bravo Wellness Portal
+                                </p>
+                            </li>
+                            <li class="dropdown-item" style="background-color: #f3993f">
+                                <p class="mb-0">
+                                    Online Health University
+                                </p>
+                            </li>
+                            <li class="dropdown-item" style="background-color: #f1a253">
+                                <p class="mb-0">
+                                    Stop Smoking
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="voluntary" class="video-images d-flex align-items-center w-100 height-306">
+                        <img class="img-fluid mx-auto" src="voluntary.svg">
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col-sm-6 col-md-2 height-33" style="background-color: #cc6439">
+                <div class="px-0 images-hormel">
+                    <div class="dropdown">
+                        <h6 class="m-0 py-2" style="background-color: #ce4e17">
+                            Other
+                            <span class="dropdown-toggle c-pointer" value="other"></span>
+                        </h6>
+                        <ul class="dropdown-ul other-ul ul-text p-0 w-100" aria-labelledby="dropdownMenuButton4">
+                            <li class="dropdown-item" style="background-color: #f07f51">
+                                <p class="mb-0">
+                                    Bravo Wellness Portal
+                                </p>
+                            </li>
+                            <li class="dropdown-item" style="background-color: #f3713e">
+                                <p class="mb-0">
+                                    Online Health University
+                                </p>
+                            </li>
+                            <li class="dropdown-item" style="background-color: #f07f51">
+                                <p class="mb-0">
+                                    Stop Smoking
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="others" class="video-images d-flex align-items-center w-100 height-306">
+                        <img class="img-fluid mx-auto" src="other.svg">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Section 2 -->
+        <section>
+            <div class="row g-0 text-center text-white height-33">
+                <div class="col-sm-4 col-md-2" style="background-color: #6e9ea8">
+                    <div class="px-0 images-hormel h-100">
+                        <div class="dropdown">
+                            <h6 class="m-0 py-2" style="background-color: #3a9caf">
+                                <span class="c-pointer" data-bs-toggle="modal" data-bs-target="#enroll-modal">Medical</span>
+                                <span class="dropdown-toggle medical-toggle c-pointer" value="medical"></span>
+                            </h6>
+                            <ul class="dropdown-ul medical-ul w-100 ul-text p-0 rounded-3">
+                                <li class="dropdown-item" style="background-color: #98c8d0">
+                                    <p class="mb-0">
+                                        Traditional Plan
+                                    </p>
+                                </li>
+                                <li class="dropdown-item" style="background-color: #79bdc9">
+                                    <p class="mb-0">
+                                        Healthy Saving Plan
+                                    </p>
+                                </li>
+                                <li class="dropdown-item" style="background-color: #98c8d0">
+                                    <p class="mb-0">
+                                        Plan Comparison
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="medical" class="video-images d-flex align-items-center w-100 height-306">
+                            <img class="img-fluid mx-auto" src="medical.svg">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-2" style="background-color: #416c73">
+                    <div class="px-0 images-hormel">
+                        <div class="dropdown">
+                            <h6 class="m-0 py-2" style="background-color: #2d666e">
+                                Dental
+                                <span class="dropdown-toggle c-pointer" value="dental"></span>
+                            </h6>
+                            <ul class="dropdown-ul dental-ul w-100 ul-text p-0" aria-labelledby="dropdownMenuButton2">
+                                <li class="dropdown-item" style="background-color: #74979d">
+                                    <p class="mb-0">
+                                        Bravo Wellness Portal
+                                    </p>
+                                </li>
+                                <li class="dropdown-item" style="background-color: #5f9099">
+                                    <p class="mb-0">
+                                        Online Health University
+                                    </p>
+                                </li>
+                                <li class="dropdown-item" style="background-color: #74979d">
+                                    <p class="mb-0">
+                                        Stop Smoking
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="dental" class="video-images d-flex align-items-center w-100 height-306">
+                            <img class="img-fluid mx-auto" src="dental.svg">
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-sm-4 col-md-2" style="background-color: #78a44a">
+                    <div class="px-0 images-hormel">
+                        <div class="dropdown">
+                            <h6 class="m-0 py-2" style="background-color: #66a523">
+                                Financial
+                                <span class="dropdown-toggle c-pointer" value="financial"></span>
+                            </h6>
+                            <ul class="dropdown-ul financial-ul w-100 ul-text p-0" aria-labelledby="dropdownMenuButton3">
+                                <li class="dropdown-item" style="background-color: #9dca70">
+                                    <p class="mb-0">
+                                        Bravo Wellness Portal
+                                    </p>
+                                </li>
+                                <li class="dropdown-item" style="background-color: #88c24e">
+                                    <p class="mb-0">
+                                        Online Health University
+                                    </p>
+                                </li>
+                                <li class="dropdown-item" style="background-color: #9dca70">
+                                    <p class="mb-0">
+                                        Stop Smoking
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="financial" class="video-images d-flex align-items-center w-100 height-306">
+                            <img class="img-fluid mx-auto" src="vision.svg">
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-sm-4 col-md-2" style="background-color: #52823e">
+                    <div class="px-0 images-hormel">
+                        <div class="dropdown">
+                            <h6 class="m-0 py-2" style="background-color: #3e8321">
+                                Well-Being
+                                <span class="dropdown-toggle c-pointer" value="wellbeing"></span>
+                            </h6>
+                            <ul class="dropdown-ul wellbeing-ul ul-text p-0 w-100" aria-labelledby="dropdownMenuButton4">
+                                <li class="dropdown-item" style="background-color: #70ab58">
+                                    <p class="mb-0">
+                                        Bravo Wellness Portal
+                                    </p>
+                                </li>
+                                <li class="dropdown-item" style="background-color: #59ac39">
+                                    <p class="mb-0">
+                                        Online Health University
+                                    </p>
+                                </li>
+                                <li class="dropdown-item" style="background-color: #70ab58">
+                                    <p class="mb-0">
+                                        Stop Smoking
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="wellbeing" class="video-images d-flex align-items-center w-100 height-306 mt-0">
+                            <img class="img-fluid mx-auto" src="disability.svg">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-2" style="background-color: #dc7a1a">
+                    <div class="px-0 images-hormel">
+                        <div class="dropdown">
+                            <h6 class="m-0 py-2" style="background-color: #da6f05">
+                                Voluntary
+                                <span class="dropdown-toggle c-pointer" value="voluntary"></span>
+                            </h6>
+                            <ul class="dropdown-ul voluntary-ul ul-text p-0 w-100" aria-labelledby="dropdownMenuButton4">
+                                <li class="dropdown-item" style="background-color: #f1a253">
+                                    <p class="mb-0">
+                                        Bravo Wellness Portal
+                                    </p>
+                                </li>
+                                <li class="dropdown-item" style="background-color: #f3993f">
+                                    <p class="mb-0">
+                                        Online Health University
+                                    </p>
+                                </li>
+                                <li class="dropdown-item" style="background-color: #f1a253">
+                                    <p class="mb-0">
+                                        Stop Smoking
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="voluntary" class="video-images d-flex align-items-center w-100 height-306">
+                            <img class="img-fluid mx-auto" src="voluntary.svg">
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-sm-4 col-md-2" style="background-color: #cc6439">
+                    <div class="px-0 images-hormel">
+                        <div class="dropdown">
+                            <h6 class="m-0 py-2" style="background-color: #ce4e17">
+                                Other
+                                <span class="dropdown-toggle c-pointer" value="other"></span>
+                            </h6>
+                            <ul class="dropdown-ul other-ul ul-text p-0 w-100" aria-labelledby="dropdownMenuButton4">
+                                <li class="dropdown-item" style="background-color: #f07f51">
+                                    <p class="mb-0">
+                                        Bravo Wellness Portal
+                                    </p>
+                                </li>
+                                <li class="dropdown-item" style="background-color: #f3713e">
+                                    <p class="mb-0">
+                                        Online Health University
+                                    </p>
+                                </li>
+                                <li class="dropdown-item" style="background-color: #f07f51">
+                                    <p class="mb-0">
+                                        Stop Smoking
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="others" class="video-images d-flex align-items-center w-100 height-306">
+                            <img class="img-fluid mx-auto" src="other.svg">
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+    </div>
+    <script>
+
+        $(document).ready(function () {
+
+            // making flipbook
+            $("#flipCon").flipBook({
+                pdfUrl: "example.pdf",
+                viewMode: "webgl"
+            });
+        });
+
+    </script>
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="fittext.js"></script>
+    <script>
+        jQuery(".overview-heading").fitText(1.7);
+        jQuery(".overview-text").fitText(2.3);
+        // jQuery(".badge-text").fitText(2);
+        jQuery(".enroll-text").fitText(2);
+        jQuery(".blue-text").fitText(1.3);
+        jQuery(".ul-text").fitText(1.3);
+        // jQuery(".desc-heading").fitText(1.1);
+        // jQuery(".view-text").fitText(1.1);
+        function resizeText(width, height) {
+            if (height < width + 200 && height > width - 200) {
+                $(".desc-heading").css(
+                    "font-size",
+                    (width * 2.2) / width + "vmin"
+                );
+                $(".desc-text").css(
+                    "font-size",
+                    (width * 1.35) / width + "vmin"
+                );
+                $(".view-text").css(
+                    "font-size",
+                    (width * 1.25) / width + "vmin"
+                );
+            } else {
+                $(".desc-heading").css(
+                    "font-size",
+                    (width * 2.4) / width + "vmin"
+                );
+                $(".desc-text").css(
+                    "font-size",
+                    (width * 1.65) / width + "vmin"
+                );
+                $(".view-text").css(
+                    "font-size",
+                    (width * 1.55) / width + "vmin"
+                );
+            }
+            if (width > 1200) {
+                // alert(width);
+                $(".btn").css('font-size', width * 0.01 + "px");
+                $(".badge-text").css('font-size', width * 0.01 + "px");
+                $(".badge-header").css('font-size', width * 0.01 + "px");
+            } else {
+                $(".btn, .badge-text, .ul-text").css('font-size', "inherit");
+                $(".badge-header").css('font-size', "16px");
+            }
+        }
+        $(document).ready(function () {
+            resizeText($(window).width(), $(window).height());
+            if($(window).width() < 576){
+                heightFix();
+            } else {
+                $(".bg-tab").css("height", "auto");
+            }
+        });
+        $(window).resize(function () {
+            resizeText($(window).width(), $(window).height());
+            if($(window).width() < 480){
+                heightFix();
+            } else {
+                $(".bg-tab").css("height", "auto");
+            }
+        });
+        $(".btn-close").click(function () {
+            $("video").trigger("pause");
+        });
+        function heightFix() {
+            if ($(".bg-tab").height() > $(".tab-img").height()) {
+                $(".bg-tab, .cross-svg").css("height", $(".tab-img").height() + "px");
+            }
+        }
+        function toggler(dropdown) {
+            dropdownUl = $("." + dropdown + "-ul");
+            if (dropdownUl.css('display') == "none") {
+                $(".dropdown-ul").each(function() {
+                    $(this).hide();
+                })
+                dropdownUl.css("display", "block");
+            } else {
+                dropdownUl.css("display", "none");
+            }
+        }
+        $(document).click(function(){
+            $(".dropdown-ul").each(function() {
+                $(this).hide();
+            })
+        });
+        $(".dropdown-toggle").click(function(e) {
+            e.stopPropagation();
+            dropdown = $(this).attr("value");
+            toggler(dropdown, "block");
+            clicked = true;
+        });
+        
+        $('.tab-img, .tab-headings').click(function () {
+            if ($(this).hasClass('medical-img') || $(this).hasClass('medical-heading')) {
+                $(".medical-tab").css('display', 'block');
+                // colorChange('.medical-img');
+                $('.medical-img').attr('fill', '#2C5D64');
+                $('.traditional-img').attr('fill', '#66acb9');
+                $('.health-img').attr('fill', '#66acb9');
+                $('.plan-img').attr('fill', '#66acb9');
+                $('.traditional-tab').css('display', 'none');
+                $('.health-tab').css('display', 'none');
+                $('.plan-tab').css('display', 'none');
+            } else if ($(this).hasClass('traditional-img') || $(this).hasClass('traditional-heading')) {
+                $('.medical-tab').css('display', 'none');
+                $('.traditional-img').attr('fill', '#2C5D64');
+                $('.medical-img').attr('fill', '#66acb9');
+                $('.health-img').attr('fill', '#66acb9');
+                $('.plan-img').attr('fill', '#66acb9');
+                $('.traditional-tab').css('display', 'block');
+                $('.health-tab').css('display', 'none');
+                $('.plan-tab').css('display', 'none');
+            } else if ($(this).hasClass('health-img') || $(this).hasClass('health-heading')) {
+                $('.medical-tab').css('display', 'none');
+                $('.traditional-tab').css('display', 'none');
+                $('.health-tab').css('display', 'block');
+                $('.health-img').attr('fill', '#2C5D64');
+                $('.traditional-img').attr('fill', '#66acb9');
+                $('.plan-img').attr('fill', '#66acb9');
+                $('.medical-img').attr('fill', '#66acb9');
+                $('.plan-tab').css('display', 'none');
+            } else {
+                $('.medical-tab').css('display', 'none');
+                $('.traditional-tab').css('display', 'none');
+                $('.health-tab').css('display', 'none');
+                $('.plan-tab').css('display', 'block');
+                $('.plan-img').attr('fill', '#2C5D64');
+                $('.medical-img').attr('fill', '#66acb9');
+                $('.traditional-img').attr('fill', '#66acb9');
+                $('.health-img').attr('fill', '#66acb9');
+            }
+        })
+    </script>
+</body>
+
+</html>
