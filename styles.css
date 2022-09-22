@@ -328,6 +328,12 @@ video {
 .pdf-img {
     height: 8vh;
 }
+.custom-col-md-2 {
+    width: 16.66667vw;
+}
+.custom-col-md-4 {
+    width: 33.33334vw;
+}
 @media screen and (max-width: 990px) {
     .bg-tab p {
         font-size: 10px;
@@ -391,6 +397,12 @@ video {
     .flipbook-main-wrapper {
         width: 80% !important;
         margin: 40px auto;
+    }
+    .custom-col-md-2 {
+        width: 25vw;
+    }
+    .custom-col-md-4 {
+        width: 50vw;
     }
     /* .desc-heading {
         font-size: 2vmax;
