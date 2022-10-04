@@ -54,11 +54,11 @@
                 <form class="d-flex justify-content-center">
                     <div class="me-3">
                         <label class="fs-20" for="firstName">First Name</label>
-                        <input name="firstName" type="text" class="form-control">
+                        <input class="firstName" name="firstName" type="text" class="form-control">
                     </div>
                     <div>
                         <label class="fs-20" for="lastName">Last Name</label>
-                        <input name="lastName" type="text" class="form-control">
+                        <input class="lastName" name="lastName" type="text" class="form-control">
                     </div>
                 </form>
                 <button class="btn btn-success mt-3 px-4 next1">Next</button>
@@ -72,10 +72,10 @@
                 <p class="fs-20">Personal or business. Whichever you check the most.</p>
                 <form class="">
                     <div class="d-flex justify-content-center mb-3">
-                        <input placeholder="useremail@domain.com" type="email" class="form-control" style="width: 50%;">
+                        <input class="email" placeholder="useremail@domain.com" type="email" class="form-control" style="width: 50%;">
                     </div>
                     <div class="form-check d-flex justify-content-center">
-                        <input class="form-check-input me-2" type="checkbox" value="" id="flexCheckDefault">
+                        <input class="form-check-input checkbox1 me-2" type="checkbox" value="" id="flexCheckDefault">
                         <label class="form-check-label" for="flexCheckDefault">
                             I agree to receive benefits related information electronically.
                         </label>
@@ -92,7 +92,7 @@
                 <p class="fs-20">We won't reach out to you about your car's extended warranty</p>
                 <form class="">
                     <div class="d-flex justify-content-center mb-3">
-                        <input placeholder="555-555-1212" type="number" class="form-control" style="width: 50%;">
+                        <input class="number" placeholder="555-555-1212" type="number" class="form-control" style="width: 50%;">
                     </div>
                     <div class="form-check d-flex justify-content-center">
                         <input class="form-check-input me-2" type="checkbox" value="" id="flexCheckDefault">
@@ -109,6 +109,38 @@
         <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     </body>
     <script>
+        $(document).ready(function() {
+            $('.next1').attr('disabled', true);
+            $('.next2').attr('disabled', true);
+            $('.submit').attr('disabled', true);
+        })
+        function checkNext1() {
+            if($('.firstName').val() == "" || $('.lastName').val() == "") {
+                $('.next1').attr('disabled', true);
+            } else {
+                $('.next1').removeAttr('disabled');
+            }
+        }
+        function checkNext2() {
+            if($('.email').val() == "") {
+                $('.next2').attr('disabled', true);
+            } else {
+                $('.next2').removeAttr('disabled');
+            }
+        }
+        function checkSubmit() {
+            if($('.number').val() == "") {
+                $('.submit').attr('disabled', true);
+            } else {
+                $('.submit').removeAttr('disabled');
+            }
+        }
+        $('input').keypress(function(){
+            checkNext1();
+            checkNext2();
+            checkSubmit();
+        })
+        
         $('.next1').click(function() {
             $('.main-2').show();
             $('.main-1').hide();
