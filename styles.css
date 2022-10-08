@@ -334,6 +334,43 @@ video {
 .custom-col-md-4 {
     width: 33.33334vw;
 }
+.c-pointer {
+    color: white;
+}
+.hamburger {
+    position: absolute;
+    right: 2%;
+    top: 2%;
+    cursor: pointer;
+}
+.sidebar {
+    height: 100vh;
+    overflow-y: auto !important;
+    width: 0;
+    transition: all 0.4s;
+    /* width: 30vw; */
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #A21F31;
+    color: white;
+    z-index: 2;
+    /* display: none; */
+}
+.sideMenu {
+    list-style: none;
+    overflow-y: auto;
+}
+.sideItem {
+    cursor: pointer;
+    line-height: 1.5;
+    padding: 10px 15px;
+}
+.sideItem:hover {
+    background-color: white;
+    color: #A21F31;
+    border-radius: 5px;
+}
 @media screen and (max-width: 990px) {
     .bg-tab p {
         font-size: 10px;

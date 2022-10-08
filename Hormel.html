@@ -36,8 +36,29 @@
         font-family: 'Roboto', sans-serif !important;
     }
 </style>
-
 <body>
+    <!-- Sidebar -->
+    <div class="text-dark hamburger" style="width: 30px;">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
+    </div>
+    <nav class="sidebar">
+        <div class="sidebar-container container-fluid">
+            <div class="mt-2 mb-3 text-end">
+                <button class="btn text-white sidebar-close">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                        <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="text-center mx-4">
+                <p class="sideItem mb-0"><a href="#">Edit Profile</a></p>
+                <p class="bg-white py-1 my-1"></a></p>
+                <p class="sideItem mb-0"><a href="#">Logout</a></p>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Body -->
     <div class="hormel-body body">
         <section class="row height-33">
             <!-- Overview 1 -->
@@ -561,6 +582,14 @@
                 $(".bg-tab").css("height", "auto");
             }
         });
+        $(".hamburger").click(function() {
+            $('.hamburger').hide();
+            $('.sidebar').css('width', '300px')
+        })
+        $('.sidebar-close').click(function(){
+            $('.sidebar').css('width', 0);
+            $('.hamburger').show();
+        })
         $(".btn-close").click(function () {
             $("video").trigger("pause");
         });
