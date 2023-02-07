@@ -16,37 +16,12 @@ body {
     font-weight: 300;
     white-space: normal;
 }
-/* .hormel-body {
-    font-family: Roboto !important;
-} */
 h3,
 h4,
 h6,
 h2 {
     font-family: "archerprosemibold";
     font-weight: bold;
-}
-.c-pointer {
-    cursor: pointer;
-}
-/* scrollbar width */
-::-webkit-scrollbar {
-  width: 5px;
-}
-
-/* acrollbar Track */
-::-webkit-scrollbar-track {
-  background: #f1f1f1;
-}
-
-/* scrollbar Handle */
-::-webkit-scrollbar-thumb {
-  background: #4CAEBB;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
 }
 a,
 a:focus,
@@ -244,32 +219,18 @@ video {
     text-align: center;
     /* width: calc(100% - 4px) !important; */
 }
-.dropdown-ul {
-    display: none;
-    position: absolute;
-    z-index: 2;
-}
 .custom-btn-close {
     /* background: transparent url("Assets 190.svg") !important; */
-    /* background-color: #000 !important; */
-    border: none;
+    background: #000 url("Asset190.svg") !important;
     border-radius: 50%;
-}
-.cross-svg {
-    width: 25px;
 }
 .custom-modal-body {
     border: 3px solid #4BADBA;
     border-radius: 0 0 10px 10px;
-    overflow-y: auto;
-    overflow-x: hidden;
 }
 .inner-modal {
     margin: 1px;
     height: 65vh;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center 100%;
 }
 /* .tab-img {
     position: relative;
@@ -289,104 +250,115 @@ video {
 }
 .bg-tab {
     position: relative;
-    width: 20%;
+}
+.bg-tab img {
+    display: block;
+    width: 100%;
+    max-width: 1200px; /* corresponds to max height of 450px */
+    margin: 0 auto;
 }
 .bg-tab p {
     position: absolute;
+    /* text-align: center; */
+    bottom: 0;
     left: 0;
     right: 0;
-    bottom: 0;
     z-index: 10;
     line-height: auto;
     font-size: 16px;
     cursor: pointer;
+    /* color: white; */
 }
-#flipCon {
-    position: static !important;
-    width: auto !important;
-    height: auto !important;
-}
-.flipbook-main-wrapper {
-    width: 60% !important;
-    margin: 40px 20px;
-    border: 10px solid gray;
-    border-radius: 10px;
-}
-.doc-lib {
-    height: 60vh;
-    /* width: 90%; */
-    /* margin: 0 20px; */
-}
-.inner-doc-lib {
-    margin: 20px 0;
-    border: 2px solid #4caebb;
-    background-color: white;
-    border-radius: 10px;
-    height: 88%;
-    width: 100%;
-}
-.pdf-img {
-    height: 8vh;
-}
-.custom-col-md-2 {
-    width: 16.66667vw;
-}
-.custom-col-md-4 {
-    width: 33.33334vw;
-}
-.c-pointer {
-    color: white;
-}
-.hamburger {
-    position: absolute;
-    right: 2%;
-    top: 2%;
-    cursor: pointer;
-}
-.sidebar {
+.popup-container {
     height: 100vh;
-    overflow-y: auto !important;
-    width: 0;
-    transition: all 0.4s;
-    /* width: 30vw; */
+    width: 100vw;
     position: absolute;
     top: 0;
-    right: 0;
-    background-color: #A21F31;
-    color: white;
+    left: 0;
     z-index: 2;
-    /* display: none; */
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.sideMenu {
-    list-style: none;
-    overflow-y: auto;
-}
-.sideItem {
-    cursor: pointer;
-    line-height: 1.5;
-    padding: 10px 15px;
-}
-.sideItem:hover {
+.popup {
+    height: 90vh;
+    width: 80vw;
     background-color: white;
-    color: #A21F31;
-    border-radius: 5px;
+    border-radius: 15px;
+    display: flex;
+    position: relative;
+}
+.close-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+.popup-section {
+    padding: 20px 5%;
+    text-align: left;
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+.popup-section-1 {
+    margin-left: 10%;
+    width: 40%;
+}
+.popup-section-2 {
+    width: 50%;
+}
+.popup-section-2-inner {
+    width: 100%; 
+    height: 90% !important; 
+    position: relative;
+}
+.popup-nav {
+    width: 100%;
+    border-bottom: 3px solid #FF7C0F;
+}
+.popup-nav ul {
+    display: flex;
+    justify-content: left;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.popup-nav ul li {
+    text-transform: uppercase;
+    background-color: #d1d1d1;
+    padding: 5px 0;
+    width: 25%;
+    color: white;
+    margin-right: 10px;
+    text-align: center;
+    border-radius: 5px 5px 0 0;
+    cursor: pointer;
+}
+.active {
+    background-color: #FF7C0F !important;
+}
+.popup-tab-section {
+    margin: 25px 10px;
+    color:  #8a8ba3;
+}
+.popup-tab-buttons {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+.next, .prev {
+    border-radius: 50%;
+    background-color: #0085cb;
 }
 @media screen and (max-width: 990px) {
     .bg-tab p {
-        font-size: 10px;
+        font-size: 8px;
     }
     .custom-btn-close {
         position: relative;
         bottom: 5px;
-    }
-    .cross-svg {
-        width: 15px;
-    }
-    .books {
-        width: 3em;
-        height: 5em;
-        right: -10px;
-        bottom: -10px;
     }
 }
 @media screen and (max-width: 767px) {
@@ -418,9 +390,6 @@ video {
     .overview2-text-box {
         padding: 10px 15px !important;
     }
-    .overview2-text-box-hormel {
-        text-align: center;
-    }
     .btn-orange {
         margin-bottom: 4px;
     }
@@ -430,16 +399,6 @@ video {
     }
     .video-images {
         height: 200px !important;
-    }
-    .flipbook-main-wrapper {
-        width: 80% !important;
-        margin: 40px auto;
-    }
-    .custom-col-md-2 {
-        width: 25vw;
-    }
-    .custom-col-md-4 {
-        width: 50vw;
     }
     /* .desc-heading {
         font-size: 2vmax;
@@ -479,9 +438,9 @@ video {
     /* #overview2-hormel {
         padding-top: 30px;
     } */
-    /* .overview2-text-box-hormel {
+    .overview2-text-box-hormel {
         padding: 30px 30px 0 30px !important;
-    } */
+    }
     .enroll {
         margin: 8px 0 !important;
     }
@@ -509,20 +468,12 @@ video {
         padding: 15px 0;
     }
     .bg-tab p {
-        font-size: 8px !important;
-    }
-}
-@media screen and (max-width: 480px) {
-    /* .bg-tab {
-        bottom: -5px;
-    } */
-    .bg-tab p {
-        bottom: -3px;
+        font-size: 6px !important;
     }
 }
 @media screen and (max-width: 360px) {
     .bg-tab p {
-        font-size: 6px !important;
+        font-size: 4px !important;
     }
 }
 @media screen and (min-width: 1200px) {
