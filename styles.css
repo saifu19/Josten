@@ -296,7 +296,6 @@ video {
     cursor: pointer;
 }
 .popup-section {
-    padding: 20px 5%;
     text-align: left;
     display: flex;
     height: 100%;
@@ -304,12 +303,15 @@ video {
 }
 .popup-section-1 {
     margin-left: 5%;
-    width: 40%;
+    width: 45%;
 }
-.popup-section-1 div {
+.popup-section-1-inner {
     max-height: 90%;
     overflow-y: auto;
     overflow-x: hidden;
+}
+.popup-section-1-inner, .popup-section-2-inner {
+    padding: 20px 10%;
 }
 .popup-section-2 {
     width: 50%;
@@ -353,7 +355,7 @@ video {
 }
 .popup-tab-buttons {
     position: absolute;
-    width: 100%;
+    width: 85%;
     bottom: 0;
 }
 .next, .prev {

@@ -7,6 +7,20 @@
     </head>
     <link rel="stylesheet" href="styles.css">
     <style>
+        /* scrollbar styling */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 12px;
+            background-color: #e1e1e1;
+            border-radius: 10px;
+        }
+
+        /* thumb styling */
+        ::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background-color: #898989;
+        }
+
         body *, p, .btn {
             font-family: Helvetica !important;
         }
@@ -14,16 +28,16 @@
     <body>
         <div class="">
             <div class="row g-0 text-center text-white">
-                <div class="col-md-4 height-67">
-                    <div class="height-33 w-100" style="background-image: url('banner.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center;">
+                <div class="col-md-4 col-12 height-67">
+                    <div class="w-100" style="background-image: url('banner.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center; height: 33vh;">
                         <!-- <img class="img-fluid height-33" src="banner.jpg" alt=""> -->
                     </div>
-                    <div class="height-34 w-100" style="background-image: url('team.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center;">
+                    <div class="w-100" style="background-image: url('team.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center; height: 34vh;">
                         <!-- <img class="img-fluid height-34" src="team.jpg" alt=""> -->
                     </div>
                 </div>
                 <div class="col-md-8">
-                    <div class="height-67 w-100" style="background-image: url('activ8.png'); background-size: cover; background-repeat: no-repeat; background-position: center;"></div>
+                    <div class="w-100" style="background-image: url('activ8.png'); background-size: cover; background-repeat: no-repeat; background-position: center; height: 67vh;"></div>
                     <!-- <img src="activ8.png" class="img-fluid height-67 w-100"> -->
                 </div>
                 <div class="col-sm-4 col-md-2 px-0 images-hormel popup-trigger" data-popup="popup-1" style="background-color: #d63429;cursor: pointer;">
@@ -78,7 +92,7 @@
                     <div class="popup" style="border: 10px solid #ff7c0f;">
                         <img class="close-icon" src="remove.png" style="width: 30px;">
                         <div class="popup-section-1 popup-section" style="background-color: #ff7c0f; color: white;">
-                            <div style="height: 90%;">
+                            <div class="popup-section-1-inner" style="height: 90%;">
                                 <img src="flash.png" class="mb-3" style="width: 40%;">
                                 <h1>Assesment & Co-Creation</h1>
                                 <p>
