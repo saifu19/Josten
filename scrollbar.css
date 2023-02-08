@@ -1,0 +1,21 @@
+/* scrollbar styling */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 12px;
+    background-color: #e1e1e1;
+    border-radius: 10px;
+}
+
+/* thumb styling */
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #898989;
+}
+body * {
+    text-align: left;
+    font-family: "Helvetica" !important;
+}
+p {
+    font-weight: 300;
+    color: #8A8BA3;
+}
